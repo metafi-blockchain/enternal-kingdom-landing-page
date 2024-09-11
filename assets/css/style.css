@@ -21,6 +21,15 @@ body {
     --bs-gutter-x: 50px;
   }
 }
+@media (max-width: 576px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    --bs-gutter-x: 40px;
+  }
+}
 .btn {
   position: relative;
   padding: 0;
@@ -172,6 +181,31 @@ body {
   }
 }
 
+.modal-content {
+  background-color: transparent;
+  border: 0;
+  border-radius: 10px;
+}
+.modal-content .modal-header {
+  border: 0;
+  padding: 0;
+}
+.modal-content .btn-close {
+  background-color: #fff;
+  border-radius: 50%;
+  margin-bottom: -30px;
+  z-index: 4;
+}
+
+.modal-backdrop {
+  background-color: #02061e;
+  -webkit-backdrop-filter: blud(6px);
+          backdrop-filter: blud(6px);
+}
+.modal-backdrop.show {
+  opacity: 0.8;
+}
+
 .slick-arrow {
   top: calc(50% + 40px);
   transform: translateY(-50%);
@@ -285,7 +319,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 999;
   width: 100%;
   background-color: rgba(17, 20, 17, 0.42);
 }
@@ -727,8 +761,11 @@ header .header-navbar .close-menu {
   }
 }
 @media (max-width: 575px) {
+  .section-install .info .download-links {
+    flex-wrap: wrap;
+  }
   .section-install .info .download-links a:last-child {
-    display: none;
+    width: 100%;
   }
 }
 .section-install .info .download-links a {
@@ -822,6 +859,9 @@ header .header-navbar .close-menu {
   border-color: #00deff;
   box-shadow: 1px 2px 40px rgba(8, 118, 255, 0.7);
 }
+.section-milestones .milestones-item:hover .stat .value {
+  transform: translateY(-10px);
+}
 .section-milestones .milestones-item .icon {
   display: flex;
   flex-direction: column;
@@ -889,6 +929,7 @@ header .header-navbar .close-menu {
   font-style: italic;
   position: relative;
   z-index: 2;
+  transition: all ease-in-out 0.3s;
 }
 @media (max-width: 575px) {
   .section-milestones .milestones-item .stat .value {
@@ -972,7 +1013,6 @@ header .header-navbar .close-menu {
 .section-about .section-title {
   margin-top: 30px;
   margin-bottom: 32px;
-  text-align: center;
 }
 @media (max-width: 991px) {
   .section-about .section-title br {
@@ -995,6 +1035,7 @@ header .header-navbar .close-menu {
   line-height: 1;
   color: rgba(0, 255, 252, 0.52);
   opacity: 0.17;
+  visibility: hidden;
 }
 @media (max-width: 1399px) {
   .section-about .year {
@@ -1015,7 +1056,6 @@ header .header-navbar .close-menu {
 }
 @media (max-width: 991px) {
   .section-about .action {
-    text-align: center;
     margin-bottom: 40px;
   }
 }
@@ -1721,7 +1761,7 @@ header .header-navbar .close-menu {
 }
 
 .section-token {
-  padding: 75px 0 100px;
+  padding: 100px 0 100px;
   background-image: url(../images/token-bg.png);
   background-size: cover;
 }
@@ -1731,17 +1771,9 @@ header .header-navbar .close-menu {
   }
 }
 .section-token .section-title {
-  margin-bottom: 75px;
-}
-@media (max-width: 1399px) {
-  .section-token .section-title {
-    margin-bottom: 40px;
-  }
+  margin-bottom: 20px;
 }
 @media (max-width: 767px) {
-  .section-token .section-title {
-    margin-bottom: 20px;
-  }
   .section-token .section-title img {
     display: none;
   }
@@ -1750,7 +1782,12 @@ header .header-navbar .close-menu {
   font-family: "Friz Quadrata Std Italic", sans-serif;
   font-size: 18px;
   text-align: center;
-  margin-bottom: 22px;
+  margin-bottom: 75px;
+}
+@media (max-width: 1399px) {
+  .section-token .description {
+    margin-bottom: 40px;
+  }
 }
 .section-token .nav {
   background-color: rgba(5, 17, 37, 0.6);
@@ -2107,12 +2144,6 @@ header .header-navbar .close-menu {
   position: relative;
   background-image: url(../images/roadmap-item.png);
   background-size: 100% 100%;
-  min-height: 360px;
-}
-@media (max-width: 1399px) {
-  .section-roadmap .roadmap-item .info {
-    min-height: 335px;
-  }
 }
 @media (max-width: 1199px) {
   .section-roadmap .roadmap-item .info {
@@ -2139,16 +2170,11 @@ header .header-navbar .close-menu {
   border-radius: 10px;
 }
 .section-roadmap .roadmap-item .info .title {
-  font-size: 36px;
-  font-family: "Nexa-Heavy", sans-serif;
+  font-size: 30px;
+  font-family: "Friz Quadrata Std Bold", sans-serif;
   margin-bottom: 28px;
   position: relative;
   z-index: 2;
-}
-@media (max-width: 1399px) {
-  .section-roadmap .roadmap-item .info .title {
-    font-size: 32px;
-  }
 }
 @media (max-width: 1199px) {
   .section-roadmap .roadmap-item .info .title {
@@ -2160,25 +2186,15 @@ header .header-navbar .close-menu {
   list-style: none;
   padding: 0;
   margin: 0;
-  line-height: 48px;
+  line-height: 40px;
   position: relative;
   z-index: 2;
 }
-@media (max-width: 1399px) {
-  .section-roadmap .roadmap-item .info ul {
-    line-height: 40px;
-  }
-}
 .section-roadmap .roadmap-item .info li {
-  font-size: 24px;
-  font-family: "Nexa-ExtraLight", sans-serif;
+  font-size: 18px;
+  font-family: "Friz Quadrata Std Medium", sans-serif;
   position: relative;
   padding-left: 32px;
-}
-@media (max-width: 1399px) {
-  .section-roadmap .roadmap-item .info li {
-    font-size: 18px;
-  }
 }
 @media (max-width: 1199px) {
   .section-roadmap .roadmap-item .info li {
@@ -2196,13 +2212,8 @@ header .header-navbar .close-menu {
   background-image: url(../images/icons/uncheck.png);
   background-size: cover;
   position: absolute;
-  top: 14px;
+  top: 10px;
   left: 0;
-}
-@media (max-width: 1399px) {
-  .section-roadmap .roadmap-item .info li::before {
-    top: 10px;
-  }
 }
 @media (max-width: 1199px) {
   .section-roadmap .roadmap-item .info li::before {
@@ -2230,7 +2241,7 @@ header .header-navbar .close-menu {
 }
 @media (max-width: 1199px) {
   .section-partners {
-    padding-top: 60px;
+    padding-top: 80px;
   }
 }
 .section-partners .section-title {
@@ -2260,7 +2271,7 @@ header .header-navbar .close-menu {
 }
 @media (max-width: 1199px) {
   .section-news {
-    padding-top: 60px;
+    padding-top: 80px;
   }
 }
 .section-news .slick-dots {
@@ -2605,12 +2616,7 @@ footer .footer-top .footer-menu ul li {
 footer .footer-top .footer-menu ul li a {
   color: #128dff;
 }
-@media (max-width: 1199px) {
-  footer .footer-top .footer-menu img {
-    width: 80px;
-  }
-}
-@media (max-width: 991px) {
+@media (max-width: 1399px) {
   footer .footer-top .footer-menu img {
     display: none;
   }
@@ -2698,8 +2704,8 @@ footer .footer-contract-address .contract-address label {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 13px;
-  font-family: "Nexa-ExtraLight", sans-serif;
+  font-size: 14px;
+  font-family: "Friz Quadrata Std Medium", sans-serif;
   color: #fff;
 }
 footer .footer-contract-address .contract-address label .icon {
@@ -2730,8 +2736,8 @@ footer .footer-contract-address .contract-address label .icon {
 footer .footer-contract-address .contract-address-value {
   padding: 10px 16px;
   background-color: #0348af;
-  font-size: 13px;
-  font-family: "Nexa-ExtraLight", sans-serif;
+  font-size: 14px;
+  font-family: "Friz Quadrata Std Medium", sans-serif;
   color: #fff;
   display: inline-flex;
   align-items: center;

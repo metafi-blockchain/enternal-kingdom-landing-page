@@ -105,9 +105,103 @@ $(window).on('resize', function () {
         $('body').removeClass('overflow-hidden');
     }
 });
+$('#MainMenu a').on('click', function () {
+    if ($(window).width() < 992) {
+        $('#MainMenu').removeClass('show');
+        $('body').removeClass('overflow-hidden');
+    }
+});
 $('.section-gameplay .icons button').on('click', function () {
     $('.section-gameplay .icons button').removeClass('active');
     $(this).addClass('active');
-    console.log($(this))
+    console.log($(this));
     $('#HeroPreview').attr('src', this.dataset.img);
+});
+$('#PlayVideo').on('click', () => {
+    $('#videoModal iframe').attr('src', 'https://www.youtube.com/embed/5zqTpcIePoc?autoplay=1&enablejsapi=1');
+    var myModalEl = document.getElementById('videoModal');
+    var videoModal = new bootstrap.Modal(myModalEl, {});
+    videoModal.show();
+    myModalEl.addEventListener('hidden.bs.modal', function (event) {
+        $('#videoModal iframe').attr('src', '');
+    });
+});
+
+// Active menu
+// Cache selectors
+var topMenu = $('#MainMenu'),
+    topMenuHeight = topMenu.outerHeight() + 15,
+    // All list items
+    menuItems = topMenu.find('a'),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function () {
+        if ($(this).attr('href') && $(this).attr('href') !== '#') {
+            var item = $($(this).attr('href'));
+            if (item.length) {
+                return item;
+            }
+        }
+    });
+
+// Bind to scroll
+$(window).scroll(function () {
+    // Get container scroll position
+    var fromTop = $(this).scrollTop() + topMenuHeight;
+
+    // Get id of current scroll item
+    var cur = scrollItems.map(function () {
+        if ($(this).offset().top < fromTop) return this;
+    });
+    // Get the id of the current element
+    cur = cur[cur.length - 1];
+    var id = cur && cur.length ? cur[0].id : '';
+    // Set/remove active class
+    menuItems.removeClass('active');
+    menuItems
+        .parent()
+        .end()
+        .filter("[href='#" + id + "']")
+        .addClass('active');
+});
+
+// Counter
+var a = 0;
+$(window).scroll(function () {
+    var oTop = $('#MILESTONES').offset().top - window.innerHeight;
+    if (a == 0 && $(window).scrollTop() > oTop) {
+        $('.counter').each(function () {
+            var $this = $(this),
+                countTo = $this.attr('data-number');
+            console.log(countTo);
+            $({
+                countNum: $this.text(),
+            }).animate(
+                {
+                    countNum: countTo,
+                },
+
+                {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function () {
+                        //$this.text(Math.ceil(this.countNum));
+                        $this.text(Math.ceil(this.countNum).toLocaleString('en'));
+                    },
+                    complete: function () {
+                        const symbol = $this.attr('data-symbol') ?? '';
+                        const symbolPosition = $this.attr('data-symbol-position');
+                        let text = Math.ceil(this.countNum).toLocaleString('en');
+                        if (symbol && symbolPosition === 'start') {
+                            text = `${symbol}${text}`;
+                        }else{
+                            text = `${text}${symbol}`;
+                        }
+                        $this.text(text);
+                        //alert('finished');
+                    },
+                },
+            );
+        });
+        a = 1;
+    }
 });

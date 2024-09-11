@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="assets/fonts/friz-quadrata-std/style.css" />
     <link rel="stylesheet" href="assets/fonts/nexa/style.css" />
     <link rel="stylesheet" href="assets/fonts/gobol/style.css" />
-    <link rel="stylesheet" href="assets/css/style.css?v=1.3" />
+    <link rel="stylesheet" href="assets/css/style.css?v=1.4" />
 </head>
 
 <body>
@@ -54,14 +54,14 @@
                     </button>
                     <ul>
                         <li>
-                            <a href="#" class="active">Home</a>
+                            <a href="#HOME" class="active">Home</a>
                         </li>
-                        <li><a href="#">Gameplay</a></li>
-                        <li><a href="#">Economy</a></li>
-                        <li><a href="#">Backers</a></li>
+                        <li><a href="#GAMEPLAY">Gameplay</a></li>
+                        <li><a href="#TOKEN">Economy</a></li>
+                        <li><a href="#PARTNERS">Backers</a></li>
                         <li><a href="#">Marketplace</a></li>
                         <li><a href="#">Team</a></li>
-                        <li><a href="#">News</a></li>
+                        <li><a href="#NEWS">News</a></li>
                         <li><a href="#">More</a></li>
                     </ul>
                 </div>
@@ -78,13 +78,13 @@
     </header>
 
     <!-- Main -->
-    <main>
+    <main id="HOME">
         <!-- BANNER -->
         <div class="section-banner" id="BANNER">
             <!-- PREVIEW -->
             <div class="container">
                 <div class="preview">
-                    <button type="button" class="play">
+                    <button type="button" class="play" id="PlayVideo">
                         <span class="icon">
                             <img src="assets/images/icons/play.png" alt="play" />
                         </span>
@@ -156,7 +156,7 @@
                                 <img src="assets/images/icons/nft.png" alt="" />
                             </div>
                             <div class="stat">
-                                <div class="value">$9999</div>
+                                <div class="value counter" data-number="9999" data-symbol="$" data-symbol-position="start">$9999</div>
                                 <span>Our most expensive <br />NFT Sold</span>
                                 <span class="bg"></span>
                             </div>
@@ -169,7 +169,7 @@
                                 <img src="assets/images/icons/team.png" alt="" />
                             </div>
                             <div class="stat">
-                                <div class="value">99+</div>
+                                <div class="value counter" data-number="99" data-symbol="+">99+</div>
                                 <span>Team members</span>
                                 <span class="bg"></span>
                             </div>
@@ -182,7 +182,7 @@
                                 <img src="assets/images/icons/user.png" alt="" />
                             </div>
                             <div class="stat">
-                                <div class="value">25M</div>
+                                <div class="value counter" data-number="25" data-symbol="M">25M</div>
                                 <span>Monthly active user</span>
                                 <span class="bg"></span>
                             </div>
@@ -195,7 +195,7 @@
                                 <img src="assets/images/icons/sold-nft.png" alt="" />
                             </div>
                             <div class="stat">
-                                <div class="value">9999+</div>
+                                <div class="value counter" data-number="9999" data-symbol="+">9999+</div>
                                 <span>Total NFT's Sold</span>
                                 <span class="bg"></span>
                             </div>
@@ -1179,11 +1179,11 @@
         <!-- Footer top -->
         <div class="footer-top">
             <div class="container">
-                <div class="row gx-lg-5 gy-4 gy-md-0">
-                    <div class="col-xxl-4 col-lg-3">
+                <div class="row gx-lg-5 gy-4 gy-xl-0">
+                    <div class="col-xl-4 col-xl-3">
                         <img class="footer-logo" src="assets/images/logo.png" alt="Eternal Kingdoms" />
                     </div>
-                    <div class="col-xxl-4 col-lg-6 col-md-6">
+                    <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="footer-menu">
                             <h4>Partnership Inquiry</h4>
                             <ul>
@@ -1193,7 +1193,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xxl-4 col-lg-6 col-md-6">
+                    <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="footer-menu">
                             <h4>Game Support Inquiry</h4>
                             <div class="d-flex gap-3 align-items-start">
@@ -1287,13 +1287,28 @@
             <div class="container">Kingdoms.game</div>
         </div>
     </footer>
+
+    <!-- Modal Video -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe style="width: 100%; min-height:80vh" src="#" frameborder="0" allow="autoplay"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/plugins/slick-1.8.1/slick.min.js"></script>
-    <script type="text/javascript" src="assets/js/scripts.js?v=1.3"></script>
+    <script type="text/javascript" src="assets/js/scripts.js?v=1.4"></script>
 </body>
 
 </html>
