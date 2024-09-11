@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Gobold Extra2';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Gobold Extra2'), url('Gobold Extra2.otf') format('opentype');
+}

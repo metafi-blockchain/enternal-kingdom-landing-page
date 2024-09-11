@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Nexa-ExtraLight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Nexa-ExtraLight'), url('Nexa-ExtraLight.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Nexa-Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Nexa-Heavy'), url('Nexa-Heavy.ttf') format('truetype');
+}
