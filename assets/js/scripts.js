@@ -115,8 +115,9 @@ $('#MainMenu a').on('click', function () {
 $('.section-gameplay .icons button').on('click', function () {
     $('.section-gameplay .icons button').removeClass('active');
     $(this).addClass('active');
-    console.log($(this));
     $('#HeroPreview').attr('src', this.dataset.img);
+    $(`.section-gameplay .info`).removeClass('active');
+    $(`#GameIcon${this.dataset.info}`).addClass('active');
 });
 $('#PlayVideo').on('click', () => {
     $('#videoModal iframe').attr('src', 'https://www.youtube.com/embed/5zqTpcIePoc?autoplay=1&enablejsapi=1');

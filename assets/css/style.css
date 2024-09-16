@@ -1264,47 +1264,48 @@ header .header-navbar .close-menu {
     height: 60px;
   }
 }
-.section-gameplay .icons .icon:nth-child(2), .section-gameplay .icons .icon:nth-child(4) {
+.section-gameplay .icons .icon:nth-child(2), .section-gameplay .icons .icon:nth-child(4), .section-gameplay .icons .icon:nth-child(6) {
   margin-right: 70px;
-  margin-top: -30px;
+  margin-top: -50px;
 }
 @media (max-width: 1399px) {
-  .section-gameplay .icons .icon:nth-child(2), .section-gameplay .icons .icon:nth-child(4) {
+  .section-gameplay .icons .icon:nth-child(2), .section-gameplay .icons .icon:nth-child(4), .section-gameplay .icons .icon:nth-child(6) {
     margin-right: 60px;
   }
 }
 @media (max-width: 1199px) {
-  .section-gameplay .icons .icon:nth-child(2), .section-gameplay .icons .icon:nth-child(4) {
+  .section-gameplay .icons .icon:nth-child(2), .section-gameplay .icons .icon:nth-child(4), .section-gameplay .icons .icon:nth-child(6) {
     margin-top: -10px;
     margin-right: 50px;
   }
 }
 @media (max-width: 991px) {
-  .section-gameplay .icons .icon:nth-child(2), .section-gameplay .icons .icon:nth-child(4) {
+  .section-gameplay .icons .icon:nth-child(2), .section-gameplay .icons .icon:nth-child(4), .section-gameplay .icons .icon:nth-child(6) {
     margin-top: -12px;
     margin-right: 40px;
   }
 }
 @media (max-width: 767px) {
-  .section-gameplay .icons .icon:nth-child(2), .section-gameplay .icons .icon:nth-child(4) {
+  .section-gameplay .icons .icon:nth-child(2), .section-gameplay .icons .icon:nth-child(4), .section-gameplay .icons .icon:nth-child(6) {
     margin: 0;
   }
 }
-.section-gameplay .icons .icon:nth-child(3), .section-gameplay .icons .icon:nth-child(5) {
-  margin-top: -30px;
+.section-gameplay .icons .icon:nth-child(1), .section-gameplay .icons .icon:nth-child(3), .section-gameplay .icons .icon:nth-child(5) {
+  margin-right: -20px;
+  margin-top: -50px;
 }
 @media (max-width: 1199px) {
-  .section-gameplay .icons .icon:nth-child(3), .section-gameplay .icons .icon:nth-child(5) {
+  .section-gameplay .icons .icon:nth-child(1), .section-gameplay .icons .icon:nth-child(3), .section-gameplay .icons .icon:nth-child(5) {
     margin-top: -10px;
   }
 }
 @media (max-width: 991px) {
-  .section-gameplay .icons .icon:nth-child(3), .section-gameplay .icons .icon:nth-child(5) {
+  .section-gameplay .icons .icon:nth-child(1), .section-gameplay .icons .icon:nth-child(3), .section-gameplay .icons .icon:nth-child(5) {
     margin-top: -12px;
   }
 }
 @media (max-width: 767px) {
-  .section-gameplay .icons .icon:nth-child(3), .section-gameplay .icons .icon:nth-child(5) {
+  .section-gameplay .icons .icon:nth-child(1), .section-gameplay .icons .icon:nth-child(3), .section-gameplay .icons .icon:nth-child(5) {
     margin: 0;
   }
 }
@@ -1418,10 +1419,13 @@ header .header-navbar .close-menu {
   opacity: 1;
 }
 .section-gameplay .info {
-  display: flex;
+  display: none;
   flex-direction: column;
   position: relative;
   padding: 50px 40px 0;
+}
+.section-gameplay .info.active {
+  display: flex;
 }
 @media (max-width: 1199px) {
   .section-gameplay .info {
@@ -1462,6 +1466,7 @@ header .header-navbar .close-menu {
   font-size: 36px;
   font-family: "Friz Quadrata Std Bold", sans-serif;
   margin-bottom: 24px;
+  line-height: 1.2;
 }
 @media (max-width: 991px) {
   .section-gameplay .info .title {
@@ -1489,6 +1494,7 @@ header .header-navbar .close-menu {
 .section-gameplay .info .decor {
   margin-top: auto;
   text-align: right;
+  margin-top: -50px;
 }
 .section-gameplay .info .decor img {
   margin-right: -50px;
@@ -2844,4 +2850,17 @@ footer .footer-copyright {
     font-size: 16px;
     padding: 10px 0;
   }
+}
+
+#FAQs .section-faq {
+  background: transparent;
+}
+#FAQs .section-faq .divider {
+  margin-bottom: 0;
+}
+#FAQs .section-faq .section-title {
+  margin-bottom: 50px;
+}
+#FAQs footer {
+  padding: 0 !important;
 }/*# sourceMappingURL=style.css.map */
