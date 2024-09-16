@@ -46,6 +46,7 @@ $('.hero-slide-nav').slick({
     arrows: true,
     dots: false,
     focusOnSelect: true,
+    infinite: true,
     responsive: [
         {
             breakpoint: 1200,
@@ -193,7 +194,7 @@ $(window).scroll(function () {
                         let text = Math.ceil(this.countNum).toLocaleString('en');
                         if (symbol && symbolPosition === 'start') {
                             text = `${symbol}${text}`;
-                        }else{
+                        } else {
                             text = `${text}${symbol}`;
                         }
                         $this.text(text);

@@ -1,1314 +1,1833 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <title>Eternal Kingdoms</title>
+        <link rel="icon" href="favicon.ico" />
+        <!-- Search Engine -->
+        <meta
+            name="description"
+            content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit nihil porro, unde nobis, doloremque hic in ipsum accusamus aliquam cum, reiciendis optio. Ullam minus velit, et quis accusantium minima natus."
+        />
+        <meta name="image" content="https://hiplab.net/eternal-kingdoms/opengraph.png" />
+        <!-- Schema.org for Google -->
+        <meta itemprop="name" content="Eternal Kingdoms" />
+        <meta
+            itemprop="description"
+            content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit nihil porro, unde nobis, doloremque hic in ipsum accusamus aliquam cum, reiciendis optio. Ullam minus velit, et quis accusantium minima natus."
+        />
+        <meta itemprop="image" content="https://hiplab.net/eternal-kingdoms/opengraph.png" />
+        <meta name="og:title" content="Eternal Kingdoms" />
+        <meta
+            name="og:description"
+            content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit nihil porro, unde nobis, doloremque hic in ipsum accusamus aliquam cum, reiciendis optio. Ullam minus velit, et quis accusantium minima natus."
+        />
+        <meta name="og:image" content="https://hiplab.net/eternal-kingdoms/opengraph.png" />
+        <meta name="og:url" content="https://hiplab.net/eternal-kingdoms" />
+        <meta name="og:site_name" content="Eternal Kingdoms" />
+        <meta name="og:locale" content="en_US" />
+        <meta name="fb:app_id" content="401785937034606" />
+        <meta name="og:type" content="website" />
+        <meta name="twitter:site" content="@eternalkingdoms" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Eternal Kingdoms" />
+        <meta
+            name="twitter:description"
+            content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit nihil porro, unde nobis, doloremque hic in ipsum accusamus aliquam cum, reiciendis optio. Ullam minus velit, et quis accusantium minima natus."
+        />
+        <meta name="twitter:image" content="https://hiplab.net/eternal-kingdoms/opengraph.png" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sen:wght@700;800&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" type="text/css" href="assets/plugins/slick-1.8.1/slick.css" />
+        <link rel="stylesheet" type="text/css" href="assets/plugins/slick-1.8.1/slick-theme.css" />
+        <link rel="stylesheet" href="assets/fonts/friz-quadrata-std/style.css" />
+        <link rel="stylesheet" href="assets/fonts/gobol/style.css" />
+        <link rel="stylesheet" href="assets/css/style.css?v=1.5" />
+    </head>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <title>Eternal Kingdoms</title>
-    <link rel="icon" href="favicon.ico" />
-    <!-- Search Engine -->
-    <meta name="description" content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit nihil porro, unde nobis, doloremque hic in ipsum accusamus aliquam cum, reiciendis optio. Ullam minus velit, et quis accusantium minima natus." />
-    <meta name="image" content="https://hiplab.net/eternal-kingdoms/opengraph.png" />
-    <!-- Schema.org for Google -->
-    <meta itemprop="name" content="Eternal Kingdoms" />
-    <meta itemprop="description" content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit nihil porro, unde nobis, doloremque hic in ipsum accusamus aliquam cum, reiciendis optio. Ullam minus velit, et quis accusantium minima natus." />
-    <meta itemprop="image" content="https://hiplab.net/eternal-kingdoms/opengraph.png" />
-    <meta name="og:title" content="Eternal Kingdoms" />
-    <meta name="og:description" content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit nihil porro, unde nobis, doloremque hic in ipsum accusamus aliquam cum, reiciendis optio. Ullam minus velit, et quis accusantium minima natus." />
-    <meta name="og:image" content="https://hiplab.net/eternal-kingdoms/opengraph.png" />
-    <meta name="og:url" content="https://hiplab.net/eternal-kingdoms" />
-    <meta name="og:site_name" content="Eternal Kingdoms" />
-    <meta name="og:locale" content="en_US" />
-    <meta name="fb:app_id" content="401785937034606" />
-    <meta name="og:type" content="website" />
-    <meta name="twitter:site" content="@eternalkingdoms" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Eternal Kingdoms" />
-    <meta name="twitter:description" content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit nihil porro, unde nobis, doloremque hic in ipsum accusamus aliquam cum, reiciendis optio. Ullam minus velit, et quis accusantium minima natus." />
-    <meta name="twitter:image" content="https://hiplab.net/eternal-kingdoms/opengraph.png" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sen:wght@700;800&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" href="assets/plugins/slick-1.8.1/slick.css" />
-    <link rel="stylesheet" type="text/css" href="assets/plugins/slick-1.8.1/slick-theme.css" />
-    <link rel="stylesheet" href="assets/fonts/friz-quadrata-std/style.css" />
-    <link rel="stylesheet" href="assets/fonts/nexa/style.css" />
-    <link rel="stylesheet" href="assets/fonts/gobol/style.css" />
-    <link rel="stylesheet" href="assets/css/style.css?v=1.4" />
-</head>
-
-<body>
-    <header>
-        <div class="container-xl container-fluid">
-            <div class="header-navbar">
-                <a href="#" class="logo">
-                    <img src="assets/images/logo.png" alt="Eternal" />
-                </a>
-                <div class="menu" id="MainMenu">
-                    <button type="button" class="close-menu" id="btnCloseMenu">
+    <body>
+        <header>
+            <div class="container-xl container-fluid">
+                <div class="header-navbar">
+                    <a href="#" class="logo">
+                        <img src="assets/images/logo.png" alt="Eternal" />
+                    </a>
+                    <div class="menu" id="MainMenu">
+                        <button type="button" class="close-menu" id="btnCloseMenu">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M18 6L6 18"
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M6 6L18 18"
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="#HOME" class="active">Home</a>
+                            </li>
+                            <li><a href="#GAMEPLAY">Gameplay</a></li>
+                            <li><a href="#TOKEN">Economy</a></li>
+                            <li><a href="#PARTNERS">Backers</a></li>
+                            <li><a href="#">Marketplace</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#NEWS">News</a></li>
+                            <li><a href="#">More</a></li>
+                        </ul>
+                    </div>
+                    <img class="m" src="assets/images/m.png" alt="" />
+                    <button type="button" class="toggle-menu" id="btnOpenMenu">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 6L6 18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M6 6L18 18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5 7H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M5 17H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                         </svg>
                     </button>
-                    <ul>
-                        <li>
-                            <a href="#HOME" class="active">Home</a>
-                        </li>
-                        <li><a href="#GAMEPLAY">Gameplay</a></li>
-                        <li><a href="#TOKEN">Economy</a></li>
-                        <li><a href="#PARTNERS">Backers</a></li>
-                        <li><a href="#">Marketplace</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#NEWS">News</a></li>
-                        <li><a href="#">More</a></li>
-                    </ul>
                 </div>
-                <img class="m" src="assets/images/m.png" alt="" />
-                <button type="button" class="toggle-menu" id="btnOpenMenu">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 7H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                        <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                        <path d="M5 17H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                    </svg>
-                </button>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <!-- Main -->
-    <main id="HOME">
-        <!-- BANNER -->
-        <div class="section-banner" id="BANNER">
-            <!-- PREVIEW -->
-            <div class="container">
-                <div class="preview">
-                    <button type="button" class="play" id="PlayVideo">
-                        <span class="icon">
-                            <img src="assets/images/icons/play.png" alt="play" />
-                        </span>
-                    </button>
-                    <div class="scroll-down">
-                        <img src="assets/images/right-divider.png" alt="" />
-                        <img src="assets/images/icons/scroll.png" alt="" class="scroll" />
-                        <img src="assets/images/left-divider.png" alt="" />
+        <!-- Main -->
+        <main id="HOME">
+            <!-- BANNER -->
+            <div class="section-banner" id="BANNER">
+                <!-- PREVIEW -->
+                <div class="container">
+                    <div class="preview">
+                        <button type="button" class="play" id="PlayVideo">
+                            <span class="icon">
+                                <img src="assets/images/icons/play.png" alt="play" />
+                            </span>
+                        </button>
+                        <div class="scroll-down">
+                            <img src="assets/images/right-divider.png" alt="" />
+                            <img src="assets/images/icons/scroll.png" alt="" class="scroll" />
+                            <img src="assets/images/left-divider.png" alt="" />
+                        </div>
                     </div>
                 </div>
+
+                <!-- INSTALL -->
+                <section class="section-install" id="INSTALL">
+                    <div class="container">
+                        <div class="row align-items-end">
+                            <div class="col-lg-6 pe-lg-5">
+                                <div class="info">
+                                    <div class="title">Install Now</div>
+                                    <div class="heading">Get Our App Now</div>
+                                    <div class="heading">& Play Like A Pro</div>
+                                    <div class="description">
+                                        Lacinia at quis risus sed vulputate odio. Accumsan lacus vel facilisis volutpat
+                                        est velit.
+                                    </div>
+                                    <a href="#" target="_blank" class="download"> Download now sar free </a>
+                                    <div class="download-links">
+                                        <a href="#" target="_blank">
+                                            <img src="assets/images/icons/ios.png" alt="ios" />
+                                            <span>IOS</span>
+                                        </a>
+                                        <a href="#" target="_blank">
+                                            <img src="assets/images/icons/android.png" alt="ios" />
+                                            <span>Android</span>
+                                        </a>
+                                        <a href="#" target="_blank">
+                                            <img src="assets/images/icons/launcher.png" alt="ios" />
+                                            <span>Launcher</span>
+                                        </a>
+                                    </div>
+                                    <a href="#" target="_blank">
+                                        <img src="assets/images/install-ad.png" class="install-ad" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="assets/images/install/icon-1.png" class="icon icon-1" alt="" />
+                        <img src="assets/images/install/icon-2.png" class="icon icon-2" alt="" />
+                        <img src="assets/images/install/icon-3.png" class="icon icon-3" alt="" />
+                        <img src="assets/images/install/icon-4.png" class="icon icon-4" alt="" />
+                        <img src="assets/images/install/img.png" class="img" alt="" />
+                        <img src="assets/images/install.png" class="w-100 hidden" alt="" />
+                    </div>
+                </section>
             </div>
 
-            <!-- INSTALL -->
-            <section class="section-install" id="INSTALL">
+            <!-- MILESTONES -->
+            <section class="section-milestones" id="MILESTONES">
                 <div class="container">
-                    <div class="row align-items-end">
-                        <div class="col-lg-6 pe-lg-5">
-                            <div class="info">
-                                <div class="title">Install Now</div>
-                                <div class="heading">Get Our App Now</div>
-                                <div class="heading">& Play Like A Pro</div>
-                                <div class="description">
-                                    Lacinia at quis risus sed vulputate odio. Accumsan lacus vel facilisis volutpat
-                                    est velit.
+                    <h3 class="section-title center">
+                        <img class="divider" src="assets/images/left-divider.png" alt="divider" />
+                        <span>MILESTONES</span>
+                        <img class="divider" src="assets/images/right-divider.png" alt="divider" />
+                    </h3>
+                    <div class="description">
+                        Since the game launch of the game in 2024, following the first IDO in<br />
+                        Sep- 2024 Thetan Arena has acheved many milestone we are truly proud of
+                    </div>
+                    <div class="row gx-lg-5 gy-5 gy-lg-0 justify-content-center">
+                        <div class="col-lg-3 col-6">
+                            <div class="milestones-item active">
+                                <div class="icon">
+                                    <span></span>
+                                    <img src="assets/images/icons/nft.png" alt="" />
                                 </div>
-                                <a href="#" target="_blank" class="download"> Download now sar free </a>
-                                <div class="download-links">
-                                    <a href="#" target="_blank">
-                                        <img src="assets/images/icons/ios.png" alt="ios" />
-                                        <span>IOS</span>
-                                    </a>
-                                    <a href="#" target="_blank">
-                                        <img src="assets/images/icons/android.png" alt="ios" />
-                                        <span>Android</span>
-                                    </a>
-                                    <a href="#" target="_blank">
-                                        <img src="assets/images/icons/launcher.png" alt="ios" />
-                                        <span>Launcher</span>
-                                    </a>
+                                <div class="stat">
+                                    <div
+                                        class="value counter"
+                                        data-number="9999"
+                                        data-symbol="$"
+                                        data-symbol-position="start"
+                                    >
+                                        $9999
+                                    </div>
+                                    <span>Our most expensive <br />NFT Sold</span>
+                                    <span class="bg"></span>
                                 </div>
-                                <a href="#" target="_blank">
-                                    <img src="assets/images/install-ad.png" class="install-ad" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="milestones-item">
+                                <div class="icon">
+                                    <span></span>
+                                    <img src="assets/images/icons/team.png" alt="" />
+                                </div>
+                                <div class="stat">
+                                    <div class="value counter" data-number="99" data-symbol="+">99+</div>
+                                    <span>Team members</span>
+                                    <span class="bg"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="milestones-item">
+                                <div class="icon">
+                                    <span></span>
+                                    <img src="assets/images/icons/user.png" alt="" />
+                                </div>
+                                <div class="stat">
+                                    <div class="value counter" data-number="25" data-symbol="M">25M</div>
+                                    <span>Monthly active user</span>
+                                    <span class="bg"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="milestones-item">
+                                <div class="icon">
+                                    <span></span>
+                                    <img src="assets/images/icons/sold-nft.png" alt="" />
+                                </div>
+                                <div class="stat">
+                                    <div class="value counter" data-number="9999" data-symbol="+">9999+</div>
+                                    <span>Total NFT's Sold</span>
+                                    <span class="bg"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABOUT -->
+            <section class="section-about" id="ABOUT">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 pe-lg-4">
+                            <h3 class="section-title">
+                                about <br />
+                                enternal kingdoms
+                            </h3>
+                            <img class="divider" src="assets/images/right-divider.png" alt="divider" />
+
+                            <div class="description">
+                                <p>
+                                    Enternal Kingdoms is a real-time strategy (RTS) game that integrates blockchain
+                                    technology, allowing players to engage in activities such as building kingdoms,
+                                    managing resources, and participating in PvP and PvE battles. Operating on the
+                                    Ethereum platform, the game enables players to own in-game assets as NFTs, including
+                                    land and unique items. These assets can be bought, sold, traded, or leased on the
+                                    marketplace, offering real earning potential.
+                                </p>
+                                <p>
+                                    Enternal Kingdoms combines classic strategic elements with blockchain innovation,
+                                    providing players with a unique experience where they can not only manage and expand
+                                    their kingdoms but also leverage the economic value of their digital assets. The
+                                    game creates opportunities for building alliances, defending territories, and
+                                    expanding influence, while harnessing the potential of NFTs to generate tangible
+                                    value from in-game activities.
+                                </p>
+                            </div>
+
+                            <div class="action">
+                                <a href="#" target="_blank" class="btn btn-sm btn-success">
+                                    <span>Whitepaper</span>
+                                    <img src="assets/images/btn-effect.png" class="effect" />
                                 </a>
                             </div>
                         </div>
+                        <div class="col-lg-7">
+                            <div class="image">
+                                <img src="assets/images/about.png" alt="" class="w-100" />
+                            </div>
+                            <div class="pagination">
+                                <button type="button" class="active"></button>
+                                <button type="button"></button>
+                                <button type="button"></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <img src="assets/images/install.png" class="image" alt="" />
             </section>
-        </div>
 
-        <!-- MILESTONES -->
-        <section class="section-milestones" id="MILESTONES">
-            <div class="container">
-                <h3 class="section-title center">
-                    <img class="divider" src="assets/images/left-divider.png" alt="divider" />
-                    <span>MILESTONES</span>
-                    <img class="divider" src="assets/images/right-divider.png" alt="divider" />
-                </h3>
-                <div class="description">
-                    Since the game launch of the game in 2024, following the first IDO in<br />
-                    Sep- 2024 Thetan Arena has acheved many milestone we are truly proud of
-                </div>
-                <div class="row gx-lg-5 gy-5 gy-lg-0 justify-content-center">
-                    <div class="col-lg-3 col-6">
-                        <div class="milestones-item active">
-                            <div class="icon">
-                                <span></span>
-                                <img src="assets/images/icons/nft.png" alt="" />
-                            </div>
-                            <div class="stat">
-                                <div class="value counter" data-number="9999" data-symbol="$" data-symbol-position="start">$9999</div>
-                                <span>Our most expensive <br />NFT Sold</span>
-                                <span class="bg"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6">
-                        <div class="milestones-item">
-                            <div class="icon">
-                                <span></span>
-                                <img src="assets/images/icons/team.png" alt="" />
-                            </div>
-                            <div class="stat">
-                                <div class="value counter" data-number="99" data-symbol="+">99+</div>
-                                <span>Team members</span>
-                                <span class="bg"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6">
-                        <div class="milestones-item">
-                            <div class="icon">
-                                <span></span>
-                                <img src="assets/images/icons/user.png" alt="" />
-                            </div>
-                            <div class="stat">
-                                <div class="value counter" data-number="25" data-symbol="M">25M</div>
-                                <span>Monthly active user</span>
-                                <span class="bg"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6">
-                        <div class="milestones-item">
-                            <div class="icon">
-                                <span></span>
-                                <img src="assets/images/icons/sold-nft.png" alt="" />
-                            </div>
-                            <div class="stat">
-                                <div class="value counter" data-number="9999" data-symbol="+">9999+</div>
-                                <span>Total NFT's Sold</span>
-                                <span class="bg"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ABOUT -->
-        <section class="section-about" id="ABOUT">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 pe-lg-0">
-                        <h3 class="section-title">
-                            about <br />
-                            enternal <br />
-                            kingdoms
-                        </h3>
-                        <img class="divider" src="assets/images/right-divider.png" alt="divider" />
-                        <div class="action">
-                            <a href="#" target="_blank" class="btn btn-sm btn-success">
-                                <span>Whitepaper</span>
-                                <img src="assets/images/btn-effect.png" class="effect" />
-                            </a>
-                        </div>
-                        <div class="year">2024</div>
-                    </div>
-                    <div class="col-lg-8 ps-lg-0">
-                        <div class="info">
-                            <img src="assets/images/about.png" alt="" class="w-100" />
-                            <div class="box">
-                                <div class="title">Title</div>
-                                <div class="description">
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the
-                                        1500s, publishing software like Aldus PageMaker including versions of L
-                                    </p>
-                                    <p>
-                                        e printing and typesetting industry. Lorem Ipsum has been the industry's
-                                        standard dummy text ever since the 1500s, publishing software like Aldus
-                                        PageMaker including versions of L
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pagination">
-                            <button type="button" class="active"></button>
-                            <button type="button"></button>
-                            <button type="button"></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- GAME PLAY -->
-        <section class="section-gameplay" id="GAMEPLAY">
-            <div class="container">
-                <h3 class="section-title center">
-                    <img class="divider" src="assets/images/left-divider.png" alt="divider" />
-                    <span>GAME PLAY</span>
-                    <img class="divider" src="assets/images/right-divider.png" alt="divider" />
-                </h3>
-                <div class="row">
-                    <div class="col-lg-2 col-md-3 pe-lg-0">
-                        <div class="icons">
-                            <button type="button" class="icon active" data-img="assets/images/game-play.png">
-                                <img src="assets/images/game-play.png" class="w-100" alt="" />
-                            </button>
-                            <button type="button" class="icon" data-img="assets/images/game-play-2.png">
-                                <img src="assets/images/game-play-2.png" class="w-100" alt="" />
-                            </button>
-                            <button type="button" class="icon" data-img="assets/images/game-play-3.png">
-                                <img src="assets/images/game-play-3.png" class="w-100" alt="" />
-                            </button>
-                            <button type="button" class="icon" data-img="assets/images/game-play-4.png">
-                                <img src="assets/images/game-play-4.png" class="w-100" alt="" />
-                            </button>
-                            <button type="button" class="icon" data-img="assets/images/game-play-5.png">
-                                <img src="assets/images/game-play-5.png" class="w-100" alt="" />
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col-lg-10 col-md-9 ps-lg-5">
-                        <div class="row">
-                            <div class="col-xl-7 col-lg-8">
-                                <div class="image">
-                                    <img id="HeroPreview" src="assets/images/game-play.png" class="w-100" alt="" />
-                                    <img src="assets/images/game-play-border.png" class="bg" alt="" />
-                                </div>
-                            </div>
-                            <div class="col-xl-5 col-lg-4 pe-lg-0">
-                                <div class="info">
-                                    <div class="title">Title</div>
-                                    <div class="description">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                        Lorem Ipsum has been the industry's standard dummy text ever
-                                    </div>
-                                    <div class="action">
-                                        <a class="btn btn-sm btn-secondary" href="#">
-                                            <span><u>Read more</u></span>
-                                        </a>
-                                    </div>
-                                    <div class="decor">
-                                        <img src="assets/images/game-play-decor.png" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- HERO -->
-        <section class="section-hero" id="HERO">
-            <div class="heroes">
-                <div class="hero-slide-for">
-                    <!-- Hero item -->
-                    <div class="hero-item">
-                        <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
-                        <div class="info">
-                            <div class="container">
-                                <div class="row justify-content-end">
-                                    <div class="col-xxl-5 col-lg-6">
-                                        <div class="hero-info">
-                                            <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
-                                            <h3 class="section-title">HERO ROME</h3>
-                                            <img class="divider" src="assets/images/right-divider.png" alt="divider" />
-                                            <div class="name">Name Heroes</div>
-                                            <div class="description">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry's standard dummy text
-                                                ever since the 1500s, when an unknown printer took a galley of type
-                                                and scrambled it to make a type specimen book.
-                                            </div>
-                                        </div>
-                                        <div class="text-center">
-                                            <a href="#" target="_blank" class="btn btn-sm btn-warning">
-                                                <span>Visit Marketplace</span>
-                                                <img src="assets/images/btn-effect.png" class="effect" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Hero item -->
-                    <div class="hero-item">
-                        <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
-                        <div class="info">
-                            <div class="container">
-                                <div class="row justify-content-end">
-                                    <div class="col-lg-5">
-                                        <div class="hero-info">
-                                            <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
-                                            <h3 class="section-title">HERO ROME</h3>
-                                            <img class="divider" src="assets/images/right-divider.png" alt="divider" />
-                                            <div class="name">Name Heroes</div>
-                                            <div class="description">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry's standard dummy text
-                                                ever since the 1500s, when an unknown printer took a galley of type
-                                                and scrambled it to make a type specimen book.
-                                            </div>
-                                        </div>
-                                        <div class="text-center">
-                                            <a href="#" target="_blank" class="btn btn-sm btn-warning">
-                                                <span>Visit Marketplace</span>
-                                                <img src="assets/images/btn-effect.png" class="effect" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Hero item -->
-                    <div class="hero-item">
-                        <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
-                        <div class="info">
-                            <div class="container">
-                                <div class="row justify-content-end">
-                                    <div class="col-lg-5">
-                                        <div class="hero-info">
-                                            <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
-                                            <h3 class="section-title">HERO ROME</h3>
-                                            <img class="divider" src="assets/images/right-divider.png" alt="divider" />
-                                            <div class="name">Name Heroes</div>
-                                            <div class="description">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry's standard dummy text
-                                                ever since the 1500s, when an unknown printer took a galley of type
-                                                and scrambled it to make a type specimen book.
-                                            </div>
-                                        </div>
-                                        <div class="text-center">
-                                            <a href="#" target="_blank" class="btn btn-sm btn-warning">
-                                                <span>Visit Marketplace</span>
-                                                <img src="assets/images/btn-effect.png" class="effect" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Hero item -->
-                    <div class="hero-item">
-                        <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
-                        <div class="info">
-                            <div class="container">
-                                <div class="row justify-content-end">
-                                    <div class="col-lg-5">
-                                        <div class="hero-info">
-                                            <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
-                                            <h3 class="section-title">HERO ROME</h3>
-                                            <img class="divider" src="assets/images/right-divider.png" alt="divider" />
-                                            <div class="name">Name Heroes</div>
-                                            <div class="description">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry's standard dummy text
-                                                ever since the 1500s, when an unknown printer took a galley of type
-                                                and scrambled it to make a type specimen book.
-                                            </div>
-                                        </div>
-                                        <div class="text-center">
-                                            <a href="#" target="_blank" class="btn btn-sm btn-warning">
-                                                <span>Visit Marketplace</span>
-                                                <img src="assets/images/btn-effect.png" class="effect" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Hero item -->
-                    <div class="hero-item">
-                        <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
-                        <div class="info">
-                            <div class="container">
-                                <div class="row justify-content-end">
-                                    <div class="col-lg-5">
-                                        <div class="hero-info">
-                                            <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
-                                            <h3 class="section-title">HERO ROME</h3>
-                                            <img class="divider" src="assets/images/right-divider.png" alt="divider" />
-                                            <div class="name">Name Heroes</div>
-                                            <div class="description">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry's standard dummy text
-                                                ever since the 1500s, when an unknown printer took a galley of type
-                                                and scrambled it to make a type specimen book.
-                                            </div>
-                                        </div>
-                                        <div class="text-center">
-                                            <a href="#" target="_blank" class="btn btn-sm btn-warning">
-                                                <span>Visit Marketplace</span>
-                                                <img src="assets/images/btn-effect.png" class="effect" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Hero item -->
-                    <div class="hero-item">
-                        <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
-                        <div class="info">
-                            <div class="container">
-                                <div class="row justify-content-end">
-                                    <div class="col-lg-5">
-                                        <div class="hero-info">
-                                            <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
-                                            <h3 class="section-title">HERO ROME</h3>
-                                            <img class="divider" src="assets/images/right-divider.png" alt="divider" />
-                                            <div class="name">Name Heroes</div>
-                                            <div class="description">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry's standard dummy text
-                                                ever since the 1500s, when an unknown printer took a galley of type
-                                                and scrambled it to make a type specimen book.
-                                            </div>
-                                        </div>
-                                        <div class="text-center">
-                                            <a href="#" target="_blank" class="btn btn-sm btn-warning">
-                                                <span>Visit Marketplace</span>
-                                                <img src="assets/images/btn-effect.png" class="effect" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Hero item -->
-                    <div class="hero-item">
-                        <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
-                        <div class="info">
-                            <div class="container">
-                                <div class="row justify-content-end">
-                                    <div class="col-lg-5">
-                                        <div class="hero-info">
-                                            <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
-                                            <h3 class="section-title">HERO ROME</h3>
-                                            <img class="divider" src="assets/images/right-divider.png" alt="divider" />
-                                            <div class="name">Name Heroes</div>
-                                            <div class="description">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry's standard dummy text
-                                                ever since the 1500s, when an unknown printer took a galley of type
-                                                and scrambled it to make a type specimen book.
-                                            </div>
-                                        </div>
-                                        <div class="text-center">
-                                            <a href="#" target="_blank" class="btn btn-sm btn-warning">
-                                                <span>Visit Marketplace</span>
-                                                <img src="assets/images/btn-effect.png" class="effect" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Hero item -->
-                    <div class="hero-item">
-                        <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
-                        <div class="info">
-                            <div class="container">
-                                <div class="row justify-content-end">
-                                    <div class="col-lg-5">
-                                        <div class="hero-info">
-                                            <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
-                                            <h3 class="section-title">HERO ROME</h3>
-                                            <img class="divider" src="assets/images/right-divider.png" alt="divider" />
-                                            <div class="name">Name Heroes</div>
-                                            <div class="description">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry's standard dummy text
-                                                ever since the 1500s, when an unknown printer took a galley of type
-                                                and scrambled it to make a type specimen book.
-                                            </div>
-                                        </div>
-                                        <div class="text-center">
-                                            <a href="#" target="_blank" class="btn btn-sm btn-warning">
-                                                <span>Visit Marketplace</span>
-                                                <img src="assets/images/btn-effect.png" class="effect" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Hero item -->
-                    <div class="hero-item">
-                        <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
-                        <div class="info">
-                            <div class="container">
-                                <div class="row justify-content-end">
-                                    <div class="col-lg-5">
-                                        <div class="hero-info">
-                                            <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
-                                            <h3 class="section-title">HERO ROME</h3>
-                                            <img class="divider" src="assets/images/right-divider.png" alt="divider" />
-                                            <div class="name">Name Heroes</div>
-                                            <div class="description">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry's standard dummy text
-                                                ever since the 1500s, when an unknown printer took a galley of type
-                                                and scrambled it to make a type specimen book.
-                                            </div>
-                                        </div>
-                                        <div class="text-center">
-                                            <a href="#" target="_blank" class="btn btn-sm btn-warning">
-                                                <span>Visit Marketplace</span>
-                                                <img src="assets/images/btn-effect.png" class="effect" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Hero item -->
-                    <div class="hero-item">
-                        <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
-                        <div class="info">
-                            <div class="container">
-                                <div class="row justify-content-end">
-                                    <div class="col-lg-5">
-                                        <div class="hero-info">
-                                            <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
-                                            <h3 class="section-title">HERO ROME</h3>
-                                            <img class="divider" src="assets/images/right-divider.png" alt="divider" />
-                                            <div class="name">Name Heroes</div>
-                                            <div class="description">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry's standard dummy text
-                                                ever since the 1500s, when an unknown printer took a galley of type
-                                                and scrambled it to make a type specimen book.
-                                            </div>
-                                        </div>
-                                        <div class="text-center">
-                                            <a href="#" target="_blank" class="btn btn-sm btn-warning">
-                                                <span>Visit Marketplace</span>
-                                                <img src="assets/images/btn-effect.png" class="effect" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hero-nav">
-                    <div class="container">
-                        <div class="hero-slide-nav">
-                            <div class="hero-slide-nav-item">
-                                <span><img src="assets/images/heroes/hero-1-thumb.png" alt="" /></span>
-                            </div>
-                            <div class="hero-slide-nav-item">
-                                <span><img src="assets/images/heroes/hero-2-thumb.png" alt="" /></span>
-                            </div>
-                            <div class="hero-slide-nav-item">
-                                <span><img src="assets/images/heroes/hero-3-thumb.png" alt="" /></span>
-                            </div>
-                            <div class="hero-slide-nav-item">
-                                <span><img src="assets/images/heroes/hero-1-thumb.png" alt="" /></span>
-                            </div>
-                            <div class="hero-slide-nav-item">
-                                <span><img src="assets/images/heroes/hero-2-thumb.png" alt="" /></span>
-                            </div>
-                            <div class="hero-slide-nav-item">
-                                <span><img src="assets/images/heroes/hero-3-thumb.png" alt="" /></span>
-                            </div>
-                            <div class="hero-slide-nav-item">
-                                <span><img src="assets/images/heroes/hero-1-thumb.png" alt="" /></span>
-                            </div>
-                            <div class="hero-slide-nav-item">
-                                <span><img src="assets/images/heroes/hero-2-thumb.png" alt="" /></span>
-                            </div>
-                            <div class="hero-slide-nav-item">
-                                <span><img src="assets/images/heroes/hero-3-thumb.png" alt="" /></span>
-                            </div>
-                            <div class="hero-slide-nav-item">
-                                <span><img src="assets/images/heroes/hero-1-thumb.png" alt="" /></span>
-                            </div>
-                            <div class="hero-slide-nav-item">
-                                <span><img src="assets/images/heroes/hero-2-thumb.png" alt="" /></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- TOKEN -->
-        <section class="section-token" id="TOKEN">
-            <div class="container">
-                <h3 class="section-title center">
-                    <img class="divider" src="assets/images/left-divider.png" alt="divider" />
-                    <span>economics and dao</span>
-                    <img class="divider" src="assets/images/right-divider.png" alt="divider" />
-                </h3>
-                <div class="description">
-                    With the power of DAO, we aim to create a stable economy where player will join us as coincil or
-                    supporters
-                </div>
-                <ul class="nav nav-pills nav-fill" id="tokenTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="tokenomics-tab" data-bs-toggle="tab"
-                            data-bs-target="#tokenomics-tab-pane" type="button" role="tab"
-                            aria-controls="tokenomics-tab-pane" aria-selected="false">
-                            Tokenomics
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="admin-token-tab" data-bs-toggle="tab"
-                            data-bs-target="#admin-token-tab-pane" type="button" role="tab"
-                            aria-controls="admin-token-tab-pane" aria-selected="true">
-                            Admin Token
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="dao-tab" data-bs-toggle="tab" data-bs-target="#dao-tab-pane"
-                            type="button" role="tab" aria-controls="dao-tab-pane" aria-selected="false">
-                            DAO
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="eternal-kingdoms-world-tab" data-bs-toggle="tab"
-                            data-bs-target="#eternal-kingdoms-world-tab-pane" type="button" role="tab"
-                            aria-controls="eternal-kingdoms-world-tab-pane" aria-selected="false">
-                            Eternal Kingdoms World
-                        </button>
-                    </li>
-                </ul>
-                <div class="tab-content" id="tokenTabContent">
-                    <div class="tab-pane fade" id="tokenomics-tab-pane" role="tabpanel" aria-labelledby="tokenomics-tab"
-                        tabindex="0">
-                        ...
-                    </div>
-                    <div class="tab-pane fade show active" id="admin-token-tab-pane" role="tabpanel"
-                        aria-labelledby="admin-token-tab" tabindex="0">
-                        <div class="row gx-lg-5 gy-5 gy-lg-0 align-items-center">
-                            <div class="col-lg-7 order-lg-1 order-2">
-                                <div class="row">
-                                    <div class="col-xl-6 col-lg-7 order-lg-1 order-2">
-                                        <div class="stats">
-                                            <div class="stats-item">
-                                                <div class="icon">
-                                                    <img src="assets/images/icons/Funded-Projects.png" alt="" />
-                                                </div>
-                                                <div class="info">
-                                                    <span>Funded Projects</span>
-                                                    <b>359</b>
-                                                </div>
-                                            </div>
-
-                                            <div class="stats-item">
-                                                <div class="icon">
-                                                    <img src="assets/images/icons/Unique-Participants.png" alt="" />
-                                                </div>
-                                                <div class="info">
-                                                    <span>Unique Participants</span>
-                                                    <b>742</b>
-                                                </div>
-                                            </div>
-
-                                            <div class="stats-item">
-                                                <div class="icon">
-                                                    <img src="assets/images/icons/Raised-Capital.png" alt="" />
-                                                </div>
-                                                <div class="info">
-                                                    <span>Raised Capital</span>
-                                                    <b>$17M</b>
-                                                </div>
-                                            </div>
-
-                                            <div class="stats-item">
-                                                <div class="icon">
-                                                    <img src="assets/images/icons/Initial-Market-Cap.png" alt="" />
-                                                </div>
-                                                <div class="info">
-                                                    <span>Initial Market Cap</span>
-                                                    <b>$32M</b>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-5 order-lg-2 order-1">
-                                        <div class="legends">
-                                            <div class="legend-item">
-                                                <div class="icon">
-                                                    <img src="assets/images/icons/legend-team.png" alt="" />
-                                                </div>
-                                                <div class="info">
-                                                    <span>Team</span>
-                                                    <b>7.5%</b>
-                                                </div>
-                                            </div>
-
-                                            <div class="legend-item">
-                                                <div class="icon">
-                                                    <img src="assets/images/icons/legend-staking.png" alt="" />
-                                                </div>
-                                                <div class="info">
-                                                    <span>Staking</span>
-                                                    <b>9.5%</b>
-                                                </div>
-                                            </div>
-
-                                            <div class="legend-item">
-                                                <div class="icon">
-                                                    <img src="assets/images/icons/legend-advisors.png" alt="" />
-                                                </div>
-                                                <div class="info">
-                                                    <span>Advisors</span>
-                                                    <b>10%</b>
-                                                </div>
-                                            </div>
-
-                                            <div class="legend-item">
-                                                <div class="icon">
-                                                    <img src="assets/images/icons/legend-liquidity.png" alt="" />
-                                                </div>
-                                                <div class="info">
-                                                    <span>Liquidity</span>
-                                                    <b>12%</b>
-                                                </div>
-                                            </div>
-
-                                            <div class="legend-item">
-                                                <div class="icon">
-                                                    <img src="assets/images/icons/legend-ecosystem.png" alt="" />
-                                                </div>
-                                                <div class="info">
-                                                    <span>Ecosystem</span>
-                                                    <b>23%</b>
-                                                </div>
-                                            </div>
-
-                                            <div class="legend-item">
-                                                <div class="icon">
-                                                    <img src="assets/images/icons/legend-marketing.png" alt="" />
-                                                </div>
-                                                <div class="info">
-                                                    <span>Marketing</span>
-                                                    <b>8%</b>
-                                                </div>
-                                            </div>
-
-                                            <div class="legend-item">
-                                                <div class="icon">
-                                                    <img src="assets/images/icons/legend-private-sale.png" alt="" />
-                                                </div>
-                                                <div class="info">
-                                                    <span>Private Sale</span>
-                                                    <b>30%</b>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-5 order-lg-2 order-1">
-                                <div class="chart">
-                                    <img src="assets/images/token-chart.png" class="w-100" alt="" />
-                                    <span class="token">
-                                        <img src="assets/images/token.png" alt="" />
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="dao-tab-pane" role="tabpanel" aria-labelledby="dao-tab" tabindex="0">
-                        ...
-                    </div>
-                    <div class="tab-pane fade" id="eternal-kingdoms-world-tab-pane" role="tabpanel"
-                        aria-labelledby="eternal-kingdoms-world-tab" tabindex="0">
-                        ...
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ROADMAP -->
-        <section class="section-roadmap" id="ROADMAP">
-            <div class="container">
-                <h3 class="section-title">a look into roadmaps seasons</h3>
-                <img class="divider" src="assets/images/right-divider.png" alt="divider" />
-                <div class="description">
-                    With Season 1 Ending with our play and Duis elementum sollicitudin is yaugue euismods Nulla ulla
-                    Player-focused updates games from Mobile App and Enjoy.
-                </div>
-                <div class="action">
-                    <a href="#" class="btn btn-success">
-                        <span>Roadmap</span>
-                        <img src="assets/images/btn-effect.png" class="effect" />
-                    </a>
-                </div>
-            </div>
-            <img src="assets/images/roadmap.png" alt="" class="image" />
-            <div class="roadmap-items">
+            <!-- GAME PLAY -->
+            <section class="section-gameplay" id="GAMEPLAY">
                 <div class="container">
-                    <div class="roadmap-slide">
-                        <div class="roadmap-item active">
-                            <div class="info">
-                                <div class="title">Season 1</div>
-                                <ul>
-                                    <li>Battle Practice Mode</li>
-                                    <li>Android Mobile</li>
-                                    <li>iOS Open Beta</li>
-                                    <li>Land Creation & Building</li>
-                                </ul>
+                    <h3 class="section-title center">
+                        <img class="divider" src="assets/images/left-divider.png" alt="divider" />
+                        <span>GAME PLAY</span>
+                        <img class="divider" src="assets/images/right-divider.png" alt="divider" />
+                    </h3>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-3 pe-lg-0">
+                            <div class="icons">
+                                <button type="button" class="icon active" data-img="assets/images/game-play.png">
+                                    <img src="assets/images/game-play.png" class="w-100" alt="" />
+                                </button>
+                                <button type="button" class="icon" data-img="assets/images/game-play-2.png">
+                                    <img src="assets/images/game-play-2.png" class="w-100" alt="" />
+                                </button>
+                                <button type="button" class="icon" data-img="assets/images/game-play-3.png">
+                                    <img src="assets/images/game-play-3.png" class="w-100" alt="" />
+                                </button>
+                                <button type="button" class="icon" data-img="assets/images/game-play-4.png">
+                                    <img src="assets/images/game-play-4.png" class="w-100" alt="" />
+                                </button>
+                                <button type="button" class="icon" data-img="assets/images/game-play-5.png">
+                                    <img src="assets/images/game-play-5.png" class="w-100" alt="" />
+                                </button>
                             </div>
                         </div>
-                        <div class="roadmap-item">
-                            <div class="info">
-                                <div class="title">Season 2</div>
-                                <ul>
-                                    <li>Land Creation & Building</li>
-                                    <li>Android Apps Development</li>
-                                    <li>iOS Open Beta Test</li>
-                                    <li>Building Creation</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="roadmap-item">
-                            <div class="info">
-                                <div class="title">Season 3</div>
-                                <ul>
-                                    <li>Switch to 3D gameplay</li>
-                                    <li>Android Mobile</li>
-                                    <li>iOS Open Beta</li>
-                                    <li>Building Creation</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="roadmap-item">
-                            <div class="info">
-                                <div class="title">Season 4</div>
-                                <ul>
-                                    <li>Switch to 3D gameplay</li>
-                                    <li>Android Mobile</li>
-                                    <li>iOS Open Beta</li>
-                                    <li>Building Creation</li>
-                                </ul>
+                        <div class="col-lg-10 col-md-9 ps-lg-5">
+                            <div class="row">
+                                <div class="col-xl-7 col-lg-8">
+                                    <div class="image">
+                                        <img id="HeroPreview" src="assets/images/game-play.png" class="w-100" alt="" />
+                                        <img src="assets/images/game-play-border.png" class="bg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="col-xl-5 col-lg-4 pe-lg-0">
+                                    <div class="info">
+                                        <div class="title">Title</div>
+                                        <div class="description">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever
+                                        </div>
+                                        <div class="action">
+                                            <a class="btn btn-sm btn-secondary" href="#">
+                                                <span><u>Read more</u></span>
+                                            </a>
+                                        </div>
+                                        <div class="decor">
+                                            <img src="assets/images/game-play-decor.png" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- PARTNERS -->
-        <section class="section-partners" id="PARTNERS">
-            <div class="container">
-                <div class="row gy-5 gy-lg-0 justify-content-between">
-                    <div class="col-lg-4">
-                        <h3 class="section-title">PARTNERS</h3>
+            <!-- HERO -->
+            <section class="section-hero" id="HERO">
+                <div class="heroes">
+                    <div class="hero-slide-for">
+                        <!-- Hero item -->
+                        <div class="hero-item">
+                            <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                            <div class="info">
+                                <div class="container">
+                                    <div class="row justify-content-end">
+                                        <div class="col-xxl-5 col-lg-6">
+                                            <div class="hero-info">
+                                                <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                                                <h3 class="section-title">Cleopatra</h3>
+                                                <img
+                                                    class="divider"
+                                                    src="assets/images/right-divider.png"
+                                                    alt="divider"
+                                                />
+                                                <div class="description">
+                                                    Cleopatra is commonly known as the Queen of Egypt. Born in 69 BC,
+                                                    she was one of the monarchs of the Ptolemaic dynasty after the
+                                                    conquest of Egypt by Alexander the Great, and the last female
+                                                    pharaoh of the dynasty. She was unusually talented, beautiful,
+                                                    clever, and witty, and a skilled tactician. She harbored many
+                                                    ambitions and had quite a dramatic life. In particular, she was
+                                                    involved in the political maelstrom at the end of the Roman
+                                                    Republic, and was closely involved with Caesar and Mark Antony. The
+                                                    stories and rumors than accompanied her made her a well-known figure
+                                                    in works of literature and art. The Romans hated her because she had
+                                                    almost made Rome a region of Egypt; the Egyptians hailed her as a
+                                                    courageous warrior because she had won 22 years of peace for a weak
+                                                    Egypt. In 30 BC, when Octavian attacked Egypt, Cleopatra committed
+                                                    suicide. Egypt was incorporated into Rome and the civilization of
+                                                    Ancient Egypt came to an end.
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#" target="_blank" class="btn btn-sm btn-warning">
+                                                    <span>Visit Marketplace</span>
+                                                    <img src="assets/images/btn-effect.png" class="effect" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hero item -->
+                        <div class="hero-item">
+                            <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                            <div class="info">
+                                <div class="container">
+                                    <div class="row justify-content-end">
+                                        <div class="col-lg-5">
+                                            <div class="hero-info">
+                                                <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                                                <h3 class="section-title">Rurik</h3>
+                                                <img
+                                                    class="divider"
+                                                    src="assets/images/right-divider.png"
+                                                    alt="divider"
+                                                />
+                                                <div class="description">
+                                                    Rurik reigned during 862-879, after founding the Russian Rurik
+                                                    dynasty. He was also the Grand Duke of Novgorod, and came from the
+                                                    Norse in the northern part of the Jutland Peninsula. Rurik, a chief
+                                                    of the Varangians, was fierce and warlike. From a young age, he set
+                                                    out on a life of adventure with his band of warriors. He established
+                                                    Ladoga Castle under his jurisdiction on the shores of Lake Ladoga,
+                                                    200 miles from the city of Novgorod. According to the Russian
+                                                    historical work "Chronicle of the Past", after the expulsion of the
+                                                    Rus people, the Eastern Slavic tribes were so exhausted from
+                                                    fighting each other that in 862, they agreed to go to Northern
+                                                    Europe to invite the Rus back. The ambassador crossed the sea to
+                                                    Scandinavia and asked the Varangians to come and rule over them,
+                                                    restoring peace and order to the Eastern Slavs. So the Rus elected
+                                                    three brothers to lead them — the eldest Rurik, the middle brother
+                                                    Sineus, and the youngest Truvor. The brothers went to Novgorod, Belo
+                                                    Ozero, and Izborsk, where they established their respective
+                                                    territories and ruled over them. However, the deaths of Sineus and
+                                                    Truvor soon followed, and the power was concentrated in Rurik's
+                                                    hands, beginning the Rurik dynasty that would last for 700 years and
+                                                    gave rise to the country of Russia.
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#" target="_blank" class="btn btn-sm btn-warning">
+                                                    <span>Visit Marketplace</span>
+                                                    <img src="assets/images/btn-effect.png" class="effect" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hero item -->
+                        <div class="hero-item">
+                            <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                            <div class="info">
+                                <div class="container">
+                                    <div class="row justify-content-end">
+                                        <div class="col-lg-5">
+                                            <div class="hero-info">
+                                                <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                                                <h3 class="section-title">Mehmed II</h3>
+                                                <img
+                                                    class="divider"
+                                                    src="assets/images/right-divider.png"
+                                                    alt="divider"
+                                                />
+                                                <div class="description">
+                                                    Mehmed II was the 7th monarch of the Ottoman Empire, but many
+                                                    historians claim he was the empire's true founder. He had a famous
+                                                    nickname, Fatih, meaning “conqueror,” because at the age of 21 he
+                                                    was already able to command an army that captured Constantinople and
+                                                    destroyed the Byzantine Empire, fulfilling the long-standing desire
+                                                    of generations of sultans. Later, he invaded the Balkan hinterlands
+                                                    of the west and fought against the Ak Koyunlu dynasty in the east,
+                                                    laying a solid foundation for the Ottoman Empire's centuries of
+                                                    rule. In addition to being a great military leader, Mehmed II was
+                                                    also an outstanding ruler. He implemented a series of measures that
+                                                    effectively strengthened the rule of the Ottoman Empire, especially
+                                                    his policies of religious and cultural tolerance, which were rare in
+                                                    those times. These measures led to the stabilization of the Ottoman
+                                                    Empire, and to significant economic and cultural development.
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#" target="_blank" class="btn btn-sm btn-warning">
+                                                    <span>Visit Marketplace</span>
+                                                    <img src="assets/images/btn-effect.png" class="effect" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hero item -->
+                        <div class="hero-item">
+                            <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                            <div class="info">
+                                <div class="container">
+                                    <div class="row justify-content-end">
+                                        <div class="col-lg-5">
+                                            <div class="hero-info">
+                                                <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                                                <h3 class="section-title">Osman I</h3>
+                                                <img
+                                                    class="divider"
+                                                    src="assets/images/right-divider.png"
+                                                    alt="divider"
+                                                />
+                                                <div class="description">
+                                                    Osman I founded the Ottoman Empire. He was the son of Ertuğrul and
+                                                    was born in Söğüt, in northern Asia Minor. He was a devout believer,
+                                                    abiding by his religious practices and living a frugal life. Osman
+                                                    was a brilliant military strategist and organizer. Under his
+                                                    leadership, the Ottoman Empire grew almost non-stop. Osman captured
+                                                    many Byzantine cities, earning the title of “Bey” (“Chief”). After
+                                                    capturing the city that he renamed Kara Hissar, he moved his capital
+                                                    there as a stronghold for further advancement. Then, Osman I set his
+                                                    sights on Bursa, the last stronghold of the Byzantine Empire in Asia
+                                                    Minor. Once Bursa had been taken, the Sea of Marmara, which led to
+                                                    Europe, lay wide open. The siege was hard fought, going back and
+                                                    forth for 9 years. Right when he was on the verge of breaking into
+                                                    the city, Osman's life came to an end. He gave his name to the
+                                                    Ottoman Empire, which lasted over 600 years. This vast empire
+                                                    spanned the three continents of Asia, Africa, and Europe, and was
+                                                    one of the most powerful and prosperous empires in the world.
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#" target="_blank" class="btn btn-sm btn-warning">
+                                                    <span>Visit Marketplace</span>
+                                                    <img src="assets/images/btn-effect.png" class="effect" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hero item -->
+                        <div class="hero-item">
+                            <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                            <div class="info">
+                                <div class="container">
+                                    <div class="row justify-content-end">
+                                        <div class="col-lg-5">
+                                            <div class="hero-info">
+                                                <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                                                <h3 class="section-title">Al-Mansur Qalawun</h3>
+                                                <img
+                                                    class="divider"
+                                                    src="assets/images/right-divider.png"
+                                                    alt="divider"
+                                                />
+                                                <div class="description">
+                                                    Al-Mansur Qalawun (1222 - 1290) was the seventh Bahri Mamluk sultan
+                                                    to rule Egypt. He was sold as a slave for a thousand dinars when he
+                                                    was 30 years old. He barely spoke Arabic, but soon joined the Mamluk
+                                                    and befriended Baibars. Qalawun and Baibars convicted Mamluk's
+                                                    second sultan, who fled to Damascus. Qalawun and Baibars established
+                                                    a deep friendship during this period. Qalawun followed Baibars and
+                                                    together founded the new Mamluk dynasty.<br />
+                                                    After Baibar's death, the dynasty was engulfed in turmoil until
+                                                    Baibar's seven-year-old son finally took the throne. Frequent
+                                                    scuffles and young leaders caused further unrest in the country.
+                                                    Qalawun realized what needed to be done. He exiled Baibar's young
+                                                    son and ascended the throne as the new Sultan. During his reign, he
+                                                    stopped the Mongolians from setting foot in Egypt and defeated the
+                                                    Crusaders. The dynasty stabilized and Mamluk reputation spread far
+                                                    and wide.<br />
+                                                    He lived a long life, dying at the age of 70 due to an illness. His
+                                                    life's merits were worthy of the people under his rule and his two
+                                                    sons succeeded the throne. The dynasty entered a prosperous golden
+                                                    age under Qalawun and his sons' rule.
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#" target="_blank" class="btn btn-sm btn-warning">
+                                                    <span>Visit Marketplace</span>
+                                                    <img src="assets/images/btn-effect.png" class="effect" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hero item -->
+                        <div class="hero-item">
+                            <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                            <div class="info">
+                                <div class="container">
+                                    <div class="row justify-content-end">
+                                        <div class="col-lg-5">
+                                            <div class="hero-info">
+                                                <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                                                <h3 class="section-title">Harun al-Rashid</h3>
+                                                <img
+                                                    class="divider"
+                                                    src="assets/images/right-divider.png"
+                                                    alt="divider"
+                                                />
+                                                <div class="description">
+                                                    Harun al-Rashid is the most famous Caliph of the Abbasid dynasty in
+                                                    the Arab Empire. He became famous in the West for his Alliance with
+                                                    Charlemagne, King of the Franks, as well as for his many anecdotes,
+                                                    vividly illustrated in the world-famous book One Thousand and One
+                                                    Nights. He was well educated by the court in matters of religion and
+                                                    culture, and was well versed in the teachings and laws of Islam.
+                                                    With his deep love for philosophy, poetry, and music, he was a
+                                                    master of both sword and pen. He went on two campaigns at the ages
+                                                    of 15 and 17, defeating Byzantium and commanding a yearly tribute.
+                                                    This earned him a widespread reputation, and his father awarded him
+                                                    the title of Rashid, meaning “Orthodox” or “Rightly-Guided”. In 786,
+                                                    he succeeded the Caliph due to the sudden death of his brother.
+                                                    During the 23 years of his reign, the country was strong,
+                                                    economically prosperous, and culturally advanced. The capital,
+                                                    Baghdad, became the political, economic, and cultural center of the
+                                                    Arab Empire, and a gathering-place for scholars. During his reign,
+                                                    he was very supportive of academia and generous toward his subjects.
+                                                    He was also very farsighted in diplomacy and world politics, which
+                                                    resulted in the Abbasid dynasty's victory over Byzantium and the
+                                                    alliance with Charlemagne. The Arabs' ability to absorb the best of
+                                                    Greek, Persian, Indian, and other foreign cultures in a short period
+                                                    of time to create an encompassing yet distinctive Arab culture was
+                                                    clearly related to Harun's enthusiastic support and active
+                                                    encouragement of literature and the arts. Harun's rule heralded a
+                                                    golden age for the Abbasid dynasty. But his mistakes in handling
+                                                    internal affairs laid the roots of future division. He divided the
+                                                    country evenly between his two sons. After his death, civil war
+                                                    broke out immediately.
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#" target="_blank" class="btn btn-sm btn-warning">
+                                                    <span>Visit Marketplace</span>
+                                                    <img src="assets/images/btn-effect.png" class="effect" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hero item -->
+                        <div class="hero-item">
+                            <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                            <div class="info">
+                                <div class="container">
+                                    <div class="row justify-content-end">
+                                        <div class="col-lg-5">
+                                            <div class="hero-info">
+                                                <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                                                <h3 class="section-title">Ivan IV</h3>
+                                                <img
+                                                    class="divider"
+                                                    src="assets/images/right-divider.png"
+                                                    alt="divider"
+                                                />
+                                                <div class="description">
+                                                    Ivan IV Vasilyevich, aka Ivan Grozny or “Ivan the Terrible”, was the
+                                                    first Tsar of the Russian Rurik dynasty and the Grand Duke of
+                                                    Moscow. Ivan IV was an intelligent, wise, and capable man who was
+                                                    very good at expanding his empire. He annexed the Kazan, Astrakhan,
+                                                    and Siberian khanates, defeated the Crimean khanate, and pushed
+                                                    Russian territory further east. The Mongols were no longer a threat
+                                                    after these efforts. In some campaigns, he went into battle and
+                                                    brought northern Caucasia back under Russian control. During his
+                                                    reign, "Tsar" became the official title of the Russian monarch. He
+                                                    was the best orator in Moscow, with an excellent command of the
+                                                    Russian language, and was one of Russia's most distinguished
+                                                    linguists and writers. Although most of his work has been lost, it's
+                                                    clear from his surviving work that he had extraordinary wordplay
+                                                    skills and a biting wit. As a result of his early accession, his
+                                                    mother temporarily acted as regent, and various groups began to vie
+                                                    for power. The constant conflict and assassinations had a profound
+                                                    impact on him as he grew up. He was strong-willed and ruthless from
+                                                    a young age, and harshly repressed the nobility. At the age of 13,
+                                                    he ordered the execution of a rival lord, and he once beat his
+                                                    eldest son to death with a cane in a fit of rage. He was born during
+                                                    a thunderstorm, and some think he got the title Ivan Grozny, “Ivan
+                                                    the Terrible” or “Ivan the Thunderous” because of this. However, the
+                                                    epithet is more likely due to his chilling actions.
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#" target="_blank" class="btn btn-sm btn-warning">
+                                                    <span>Visit Marketplace</span>
+                                                    <img src="assets/images/btn-effect.png" class="effect" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hero item -->
+                        <div class="hero-item">
+                            <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                            <div class="info">
+                                <div class="container">
+                                    <div class="row justify-content-end">
+                                        <div class="col-lg-5">
+                                            <div class="hero-info">
+                                                <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                                                <h3 class="section-title">Abul' Abbas</h3>
+                                                <img
+                                                    class="divider"
+                                                    src="assets/images/right-divider.png"
+                                                    alt="divider"
+                                                />
+                                                <div class="description">
+                                                    Abu al-Abbas as-Saffah was the founder of the Abbasid dynasty, and
+                                                    the first Caliph of the Abbasids (750-754). In June of 747, as the
+                                                    declining Umayyad dynasty came to and end, he raised the banner of
+                                                    rebellion against the dynasty. Many dissatisfied groups supported
+                                                    him, including the Iranians and the people of Khurasan. In early
+                                                    750, the Abbasids met Marwan II's army on the Zab River, a tributary
+                                                    of the Tigris. The Abbasid army was victorious, and the battle
+                                                    hastened the demise of the Umayyad Dynasty, which was complete after
+                                                    Damascus surrendered in April 750. With Kufa as his capital and Iraq
+                                                    as the center of his empire, As-Saffah became Caliph and established
+                                                    the Abbasid dynasty. After taking power, As-Saffah executed nearly
+                                                    every member of the Umayyad family. In his inaugural speech in Kufa,
+                                                    he called himself “Saffah”, which means either “shedder of blood” or
+                                                    “generous, merciful person”.
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#" target="_blank" class="btn btn-sm btn-warning">
+                                                    <span>Visit Marketplace</span>
+                                                    <img src="assets/images/btn-effect.png" class="effect" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hero item -->
+                        <div class="hero-item">
+                            <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                            <div class="info">
+                                <div class="container">
+                                    <div class="row justify-content-end">
+                                        <div class="col-lg-5">
+                                            <div class="hero-info">
+                                                <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                                                <h3 class="section-title">AL-Hajjaj ibn Yussuf</h3>
+                                                <img
+                                                    class="divider"
+                                                    src="assets/images/right-divider.png"
+                                                    alt="divider"
+                                                />
+                                                <div class="description">
+                                                    Al-Hajjaj ibn Yusuf was born in 661 to the Banu Thaqif tribe in
+                                                    Ta'if. He was physically ugly, short in stature, and one-eyed, but
+                                                    he was intelligent and eloquent. He was despised by his classmates
+                                                    because of his disability, and developed a cruel and withdrawn
+                                                    personality. As an adult, his talents remained unrecognized.
+                                                    Aggrieved by this, he became increasingly ruthless and violent,
+                                                    often flogging soldiers and causing discontent among his
+                                                    subordinates. Hearing this, the Caliph Abd al-Malik summoned him
+                                                    and, appreciating his abilities, made him an officer in the campaign
+                                                    against Basra. Later, his true talents were revealed. In 691,
+                                                    Al-Hajjaj ibn Yusuf took over as commander of the Mecca expedition,
+                                                    first going to his hometown of Ta'if, then to Yathrib (modern-day
+                                                    Medina) to summon the scattered soldiers and convert them into his
+                                                    own army. Once the fighting began, he laid siege to Mecca for six
+                                                    months and successfully conquered the city. He was rewarded by Abd
+                                                    al-Malik with the position of governor of the Arabian Peninsula and
+                                                    Iraq. During his tenure, his administration was brutal and bloody,
+                                                    and he was known as the Iron Fist because of his repressive policies
+                                                    and subjugation of the Mawali (new converts to Islam).
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#" target="_blank" class="btn btn-sm btn-warning">
+                                                    <span>Visit Marketplace</span>
+                                                    <img src="assets/images/btn-effect.png" class="effect" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hero item -->
+                        <div class="hero-item">
+                            <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                            <div class="info">
+                                <div class="container">
+                                    <div class="row justify-content-end">
+                                        <div class="col-lg-5">
+                                            <div class="hero-info">
+                                                <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                                                <h3 class="section-title">Ramesses II</h3>
+                                                <img
+                                                    class="divider"
+                                                    src="assets/images/right-divider.png"
+                                                    alt="divider"
+                                                />
+                                                <div class="description">
+                                                    Ramesses II, son of Pharaoh Seti I, was Pharaoh during the 19th
+                                                    dynasty of ancient Egypt. An outstanding politician, strategist,
+                                                    writer, and poet, his rule was the last golden era of the new
+                                                    kingdom of Egypt. During his reign, Ramesses II carried out a series
+                                                    of expeditions and clashed with the Hittite Empire, a powerful force
+                                                    at the time. After the death of the Hittite king, the new king
+                                                    entered into a contract with Egypt to form a military alliance. This
+                                                    is arguably the first famous international alliance in history. Out
+                                                    of concern for the Hittites' military power, Ramesses II ordered a
+                                                    new city to be built on the northeastern Nile Delta as his capital
+                                                    and named it Per-Ramesses (meaning “Home of Ramesses”). Ramesses II
+                                                    created many works for his famous queen and ordered sculptures to be
+                                                    built in her honor. Ramesses II was one of Egypt's most famous
+                                                    pharaohs, and his enthusiasm for huge civil works left his mark all
+                                                    over Egypt. The reign of Ramesses II gave Egypt a radiance never
+                                                    seen before. He passed away at the age of 96, taking with him the
+                                                    last afterglow of his shining light.
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#" target="_blank" class="btn btn-sm btn-warning">
+                                                    <span>Visit Marketplace</span>
+                                                    <img src="assets/images/btn-effect.png" class="effect" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hero item -->
+                        <div class="hero-item">
+                            <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                            <div class="info">
+                                <div class="container">
+                                    <div class="row justify-content-end">
+                                        <div class="col-lg-5">
+                                            <div class="hero-info">
+                                                <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                                                <h3 class="section-title">Alp Arslan</h3>
+                                                <img
+                                                    class="divider"
+                                                    src="assets/images/right-divider.png"
+                                                    alt="divider"
+                                                />
+                                                <div class="description">
+                                                    Alp Arslan, whose real name was Muhammad bin Dawud Chaghri, was the
+                                                    second Sultan of the Seljuk Empire. During his reign, Alp Arslan won
+                                                    many battles against Egypt's Fatimid dynasty and the Eastern Roman
+                                                    Empire, which enabled him to expand his empire's territory. Later
+                                                    generations admired his uncommon military prowess and honored him
+                                                    with the Turkish title "Alp Arslan", meaning “Heroic Lion”. His
+                                                    political activities were founded on the great ideals of the three
+                                                    monarchs of Seljuk, and he made several attacks on Byzantium,
+                                                    Georgia, and Armenia. In 1064, he led an attack on the Byzantine
+                                                    Empire, defeating and capturing the Byzantine Emperor Romanus IV
+                                                    thanks to his excellent strategy. This was the decisive battle of
+                                                    the Byzantine-Seljuk wars, in which Alp Arslan truly showed his
+                                                    talents. But his aim was not to immediately annihilate the Byzantine
+                                                    Empire, just to revise its borders. He generously released the
+                                                    captured emperor so that he could demand more tributes. On November
+                                                    25, 1072, at the age of 43, Alp Arslan was unexpectedly stabbed to
+                                                    death by a prisoner during a hunting trip. Conquest was his greatest
+                                                    pleasure in life. He had no interest in the practicalities of
+                                                    governance, entrusting them to his ministers along with the
+                                                    administration of the empire.
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#" target="_blank" class="btn btn-sm btn-warning">
+                                                    <span>Visit Marketplace</span>
+                                                    <img src="assets/images/btn-effect.png" class="effect" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hero item -->
+                        <div class="hero-item">
+                            <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                            <div class="info">
+                                <div class="container">
+                                    <div class="row justify-content-end">
+                                        <div class="col-lg-5">
+                                            <div class="hero-info">
+                                                <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                                                <h3 class="section-title">Saladin</h3>
+                                                <img
+                                                    class="divider"
+                                                    src="assets/images/right-divider.png"
+                                                    alt="divider"
+                                                />
+                                                <div class="description">
+                                                    Saladin al-Hajjaj ibn Yusuf, known as Saladin, was the first Sultan
+                                                    of the Ayyubid dynasty in Egypt. He is known as a national hero for
+                                                    his outstanding performance in many battles. Saladin's most
+                                                    outstanding achievement was the capture of Jerusalem, which brought
+                                                    a dramatic turnaround in the struggle for the land. He also
+                                                    consolidated Syria, Egypt, and vast areas of West Asia under the
+                                                    rule of a unified regime. He was widely praised for his generosity,
+                                                    so he left behind only 1 dinar and 47 dirhams when he died. On his
+                                                    deathbed, Saladin exhorted his eldest son, Malik al-Afdal, to be
+                                                    sensitive to the situation of the people and care for their plight.
+                                                    On March 3rd, 1193, Saladin died in Damascus at the age of 55. After
+                                                    his death, people often visited his mausoleum to pay their respects.
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#" target="_blank" class="btn btn-sm btn-warning">
+                                                    <span>Visit Marketplace</span>
+                                                    <img src="assets/images/btn-effect.png" class="effect" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hero item -->
+                        <div class="hero-item">
+                            <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                            <div class="info">
+                                <div class="container">
+                                    <div class="row justify-content-end">
+                                        <div class="col-lg-5">
+                                            <div class="hero-info">
+                                                <img src="assets/images/heroes/hero-1.png" alt="" class="image" />
+                                                <h3 class="section-title">Hatshepsut</h3>
+                                                <img
+                                                    class="divider"
+                                                    src="assets/images/right-divider.png"
+                                                    alt="divider"
+                                                />
+                                                <div class="description">
+                                                    Hatshepsut reigned from 1479-1458 BC, and was Queen of the 18th
+                                                    dynasty of Ancient Egypt. She was the only child of Thutmose I and
+                                                    his queen, and became Pharaoh, founding a prosperous era for Ancient
+                                                    Egypt. She grew up smart, bold, strong, and skilled in the art of
+                                                    politics. Priding herself on being the only legitimate heir to the
+                                                    pharaoh, she dreamed of one day ruling a strong Egypt. She married
+                                                    her half-brother Thutmose II, whose mother was a royal concubine.
+                                                    Thutmose II suffered from fragile health and had no desire to rule.
+                                                    Soon after he succeeded to the throne, the power fell to Hatshepsut.
+                                                    A few years later, Thutmose II fell ill and died. Hatshepsut
+                                                    arranged for Thutmose III to marry her daughter and ascend to the
+                                                    throne. In her capacity as regent, she retained full authority over
+                                                    the affairs of state. Her administration put an end to Egypt's wars
+                                                    abroad, thus destabilizing Egyptian rule in Syria and Palestine.
+                                                    However, her domination over Egypt's trade and commerce with its
+                                                    neighbors also made Egypt prosperous. When Thutmose III grew up,
+                                                    Hatshepsut exiled him to a remote place. Claiming to be the daughter
+                                                    of the sun god Amun, she ascended to the throne. A significant
+                                                    change occurred in the 22nd year of Hatshepsut's reign. Thutmose III
+                                                    suddenly returned from exile and Hatshepsut disappeared. Evidence
+                                                    seems to suggest that this was connected to the appointment of
+                                                    Thutmose III as head of the army. During the independent reign of
+                                                    Thutmose III, words and images referring to Queen Hatshepsut were
+                                                    chiseled off most stone monuments. Hatshepsut I has since become one
+                                                    of the most mysterious Egyptian pharaohs. She was also the first
+                                                    historically confirmed female ruler in the world.
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#" target="_blank" class="btn btn-sm btn-warning">
+                                                    <span>Visit Marketplace</span>
+                                                    <img src="assets/images/btn-effect.png" class="effect" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-nav">
+                        <div class="container">
+                            <div class="hero-slide-nav">
+                                <div class="hero-slide-nav-item">
+                                    <span><img src="assets/images/heroes/Hero_1010.png" alt="" /></span>
+                                </div>
+                                <div class="hero-slide-nav-item">
+                                    <span><img src="assets/images/heroes/Hero_1007.png" alt="" /></span>
+                                </div>
+                                <div class="hero-slide-nav-item">
+                                    <span><img src="assets/images/heroes/Hero_1009.png" alt="" /></span>
+                                </div>
+                                <div class="hero-slide-nav-item">
+                                    <span><img src="assets/images/heroes/Hero_1006.png" alt="" /></span>
+                                </div>
+                                <div class="hero-slide-nav-item">
+                                    <span><img src="assets/images/heroes/Hero_1017.png" alt="" /></span>
+                                </div>
+                                <div class="hero-slide-nav-item">
+                                    <span><img src="assets/images/heroes/Hero_1012.png" alt="" /></span>
+                                </div>
+                                <div class="hero-slide-nav-item">
+                                    <span><img src="assets/images/heroes/Hero_1002.png" alt="" /></span>
+                                </div>
+                                <div class="hero-slide-nav-item">
+                                    <span><img src="assets/images/heroes/Hero_1000_SD.png" alt="" /></span>
+                                </div>
+                                <div class="hero-slide-nav-item">
+                                    <span><img src="assets/images/heroes/Hero_1008.png" alt="" /></span>
+                                </div>
+                                <div class="hero-slide-nav-item">
+                                    <span><img src="assets/images/heroes/Hero_1003.png" alt="" /></span>
+                                </div>
+                                <div class="hero-slide-nav-item">
+                                    <span><img src="assets/images/heroes/Hero_1005.png" alt="" /></span>
+                                </div>
+                                <div class="hero-slide-nav-item">
+                                    <span><img src="assets/images/heroes/Hero_1013.png" alt="" /></span>
+                                </div>
+                                <div class="hero-slide-nav-item">
+                                    <span><img src="assets/images/heroes/Hero_1011.png" alt="" /></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TOKEN -->
+            <section class="section-token" id="TOKEN">
+                <div class="container">
+                    <h3 class="section-title center">
+                        <img class="divider" src="assets/images/left-divider.png" alt="divider" />
+                        <span>economics and dao</span>
                         <img class="divider" src="assets/images/right-divider.png" alt="divider" />
-                        <p>
-                            With Season 1 Ending with our play and Duis elementum sollicitudin is yaugue euismods
-                            Nulla ulla Player-focused updates games from Mobile App and Enjoy.
-                        </p>
-                        <a href="#" class="btn btn-warning" target="_blank">
-                            <span>Join with us</span>
+                    </h3>
+                    <div class="description">
+                        With the power of DAO, we aim to create a stable economy where player will join us as coincil or
+                        supporters
+                    </div>
+                    <ul class="nav nav-pills nav-fill" id="tokenTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button
+                                class="nav-link"
+                                id="tokenomics-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#tokenomics-tab-pane"
+                                type="button"
+                                role="tab"
+                                aria-controls="tokenomics-tab-pane"
+                                aria-selected="false"
+                            >
+                                Tokenomics
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button
+                                class="nav-link active"
+                                id="admin-token-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#admin-token-tab-pane"
+                                type="button"
+                                role="tab"
+                                aria-controls="admin-token-tab-pane"
+                                aria-selected="true"
+                            >
+                                Admin Token
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button
+                                class="nav-link"
+                                id="dao-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#dao-tab-pane"
+                                type="button"
+                                role="tab"
+                                aria-controls="dao-tab-pane"
+                                aria-selected="false"
+                            >
+                                DAO
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button
+                                class="nav-link"
+                                id="eternal-kingdoms-world-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#eternal-kingdoms-world-tab-pane"
+                                type="button"
+                                role="tab"
+                                aria-controls="eternal-kingdoms-world-tab-pane"
+                                aria-selected="false"
+                            >
+                                Eternal Kingdoms World
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="tokenTabContent">
+                        <div
+                            class="tab-pane fade"
+                            id="tokenomics-tab-pane"
+                            role="tabpanel"
+                            aria-labelledby="tokenomics-tab"
+                            tabindex="0"
+                        >
+                            ...
+                        </div>
+                        <div
+                            class="tab-pane fade show active"
+                            id="admin-token-tab-pane"
+                            role="tabpanel"
+                            aria-labelledby="admin-token-tab"
+                            tabindex="0"
+                        >
+                            <div class="row gx-lg-5 gy-5 gy-lg-0 align-items-center">
+                                <div class="col-lg-7 order-lg-1 order-2">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-7 order-lg-1 order-2">
+                                            <div class="stats">
+                                                <div class="stats-item">
+                                                    <div class="icon">
+                                                        <img src="assets/images/icons/Funded-Projects.png" alt="" />
+                                                    </div>
+                                                    <div class="info">
+                                                        <span>Funded Projects</span>
+                                                        <b>359</b>
+                                                    </div>
+                                                </div>
+
+                                                <div class="stats-item">
+                                                    <div class="icon">
+                                                        <img src="assets/images/icons/Unique-Participants.png" alt="" />
+                                                    </div>
+                                                    <div class="info">
+                                                        <span>Unique Participants</span>
+                                                        <b>742</b>
+                                                    </div>
+                                                </div>
+
+                                                <div class="stats-item">
+                                                    <div class="icon">
+                                                        <img src="assets/images/icons/Raised-Capital.png" alt="" />
+                                                    </div>
+                                                    <div class="info">
+                                                        <span>Raised Capital</span>
+                                                        <b>$17M</b>
+                                                    </div>
+                                                </div>
+
+                                                <div class="stats-item">
+                                                    <div class="icon">
+                                                        <img src="assets/images/icons/Initial-Market-Cap.png" alt="" />
+                                                    </div>
+                                                    <div class="info">
+                                                        <span>Initial Market Cap</span>
+                                                        <b>$32M</b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-5 order-lg-2 order-1">
+                                            <div class="legends">
+                                                <div class="legend-item">
+                                                    <div class="icon">
+                                                        <img src="assets/images/icons/legend-team.png" alt="" />
+                                                    </div>
+                                                    <div class="info">
+                                                        <span>Team</span>
+                                                        <b>7.5%</b>
+                                                    </div>
+                                                </div>
+
+                                                <div class="legend-item">
+                                                    <div class="icon">
+                                                        <img src="assets/images/icons/legend-staking.png" alt="" />
+                                                    </div>
+                                                    <div class="info">
+                                                        <span>Staking</span>
+                                                        <b>9.5%</b>
+                                                    </div>
+                                                </div>
+
+                                                <div class="legend-item">
+                                                    <div class="icon">
+                                                        <img src="assets/images/icons/legend-advisors.png" alt="" />
+                                                    </div>
+                                                    <div class="info">
+                                                        <span>Advisors</span>
+                                                        <b>10%</b>
+                                                    </div>
+                                                </div>
+
+                                                <div class="legend-item">
+                                                    <div class="icon">
+                                                        <img src="assets/images/icons/legend-liquidity.png" alt="" />
+                                                    </div>
+                                                    <div class="info">
+                                                        <span>Liquidity</span>
+                                                        <b>12%</b>
+                                                    </div>
+                                                </div>
+
+                                                <div class="legend-item">
+                                                    <div class="icon">
+                                                        <img src="assets/images/icons/legend-ecosystem.png" alt="" />
+                                                    </div>
+                                                    <div class="info">
+                                                        <span>Ecosystem</span>
+                                                        <b>23%</b>
+                                                    </div>
+                                                </div>
+
+                                                <div class="legend-item">
+                                                    <div class="icon">
+                                                        <img src="assets/images/icons/legend-marketing.png" alt="" />
+                                                    </div>
+                                                    <div class="info">
+                                                        <span>Marketing</span>
+                                                        <b>8%</b>
+                                                    </div>
+                                                </div>
+
+                                                <div class="legend-item">
+                                                    <div class="icon">
+                                                        <img src="assets/images/icons/legend-private-sale.png" alt="" />
+                                                    </div>
+                                                    <div class="info">
+                                                        <span>Private Sale</span>
+                                                        <b>30%</b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 order-lg-2 order-1">
+                                    <div class="chart">
+                                        <img src="assets/images/token-chart.png" class="w-100" alt="" />
+                                        <span class="token">
+                                            <img src="assets/images/token.png" alt="" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tab-pane fade"
+                            id="dao-tab-pane"
+                            role="tabpanel"
+                            aria-labelledby="dao-tab"
+                            tabindex="0"
+                        >
+                            ...
+                        </div>
+                        <div
+                            class="tab-pane fade"
+                            id="eternal-kingdoms-world-tab-pane"
+                            role="tabpanel"
+                            aria-labelledby="eternal-kingdoms-world-tab"
+                            tabindex="0"
+                        >
+                            ...
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ROADMAP -->
+            <section class="section-roadmap" id="ROADMAP">
+                <div class="container">
+                    <h3 class="section-title">a look into roadmaps seasons</h3>
+                    <img class="divider" src="assets/images/right-divider.png" alt="divider" />
+                    <div class="description">
+                        With Season 1 Ending with our play and Duis elementum sollicitudin is yaugue euismods Nulla ulla
+                        Player-focused updates games from Mobile App and Enjoy.
+                    </div>
+                    <div class="action">
+                        <a href="#" class="btn btn-success">
+                            <span>Roadmap</span>
                             <img src="assets/images/btn-effect.png" class="effect" />
                         </a>
                     </div>
-                    <div class="col-lg-7">
-                        <img src="assets/images/partners.png" class="w-100" alt="partners" />
+                </div>
+                <img src="assets/images/roadmap.png" alt="" class="image" />
+                <div class="roadmap-items">
+                    <div class="container">
+                        <div class="roadmap-slide">
+                            <div class="roadmap-item active">
+                                <div class="info">
+                                    <div class="title">Season 1</div>
+                                    <ul>
+                                        <li>Battle Practice Mode</li>
+                                        <li>Android Mobile</li>
+                                        <li>iOS Open Beta</li>
+                                        <li>Land Creation & Building</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="roadmap-item">
+                                <div class="info">
+                                    <div class="title">Season 2</div>
+                                    <ul>
+                                        <li>Land Creation & Building</li>
+                                        <li>Android Apps Development</li>
+                                        <li>iOS Open Beta Test</li>
+                                        <li>Building Creation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="roadmap-item">
+                                <div class="info">
+                                    <div class="title">Season 3</div>
+                                    <ul>
+                                        <li>Switch to 3D gameplay</li>
+                                        <li>Android Mobile</li>
+                                        <li>iOS Open Beta</li>
+                                        <li>Building Creation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="roadmap-item">
+                                <div class="info">
+                                    <div class="title">Season 4</div>
+                                    <ul>
+                                        <li>Switch to 3D gameplay</li>
+                                        <li>Android Mobile</li>
+                                        <li>iOS Open Beta</li>
+                                        <li>Building Creation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- THE LATEST NEWS -->
-        <section class="section-news" id="NEWS">
-            <div class="container">
-                <h3 class="section-title center">
-                    <img class="divider" src="assets/images/left-divider.png" alt="divider" />
-                    <span>THE LATEST NEWS</span>
+            <!-- PARTNERS -->
+            <section class="section-partners" id="PARTNERS">
+                <div class="container">
+                    <div class="row gy-5 gy-lg-0 justify-content-between">
+                        <div class="col-lg-4">
+                            <h3 class="section-title">PARTNERS</h3>
+                            <img class="divider" src="assets/images/right-divider.png" alt="divider" />
+                            <p>
+                                With Season 1 Ending with our play and Duis elementum sollicitudin is yaugue euismods
+                                Nulla ulla Player-focused updates games from Mobile App and Enjoy.
+                            </p>
+                            <a href="#" class="btn btn-warning" target="_blank">
+                                <span>Join with us</span>
+                                <img src="assets/images/btn-effect.png" class="effect" />
+                            </a>
+                        </div>
+                        <div class="col-lg-7">
+                            <img src="assets/images/partners.png" class="w-100" alt="partners" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- THE LATEST NEWS -->
+            <section class="section-news" id="NEWS">
+                <div class="container">
+                    <h3 class="section-title center">
+                        <img class="divider" src="assets/images/left-divider.png" alt="divider" />
+                        <span>THE LATEST NEWS</span>
+                        <img class="divider" src="assets/images/right-divider.png" alt="divider" />
+                    </h3>
+
+                    <div class="row" id="NewsSlide">
+                        <div class="col-md-4">
+                            <div class="news-item">
+                                <a class="image" href="#" title="New to">
+                                    <img src="assets/images/news-1.png" alt="New to" />
+                                </a>
+                                <div class="info">
+                                    <h3 class="title">About Enternal Kingdoms</h3>
+                                    <div class="description">
+                                        Enternal Kingdoms là một trò chơi chiến lược mới với ngôn ngữ Persian ngọt ngào!
+                                        Chọn một trong các nền văn minh cổ đại và mở rộng lãnh thổ, phát triển lực lượng
+                                        và công nghệ của bạn để trở thành cường quốc vĩ đại nhất thế giới!
+                                    </div>
+                                    <div class="readmore">
+                                        <a href="#" title=""> Read more </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="news-item">
+                                <a class="image" href="#" title="New to">
+                                    <img src="assets/images/news-2.png" alt="New to" />
+                                </a>
+                                <div class="info">
+                                    <h3 class="title">New to</h3>
+                                    <div class="description">
+                                        Follow us to get started on the Play-to-Earn journey that is never short of
+                                        excitement!
+                                    </div>
+                                    <div class="readmore">
+                                        <a href="#" title=""> Read more </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="news-item">
+                                <a class="image" href="#" title="New to">
+                                    <img src="assets/images/news-3.png" alt="New to" />
+                                </a>
+                                <div class="info">
+                                    <h3 class="title">New to</h3>
+                                    <div class="description">
+                                        Follow us to get started on the Play-to-Earn journey that is never short of
+                                        excitement!
+                                    </div>
+                                    <div class="readmore">
+                                        <a href="#" title=""> Read more </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="viewmore">
+                        <a href="#" class="btn btn-primary">
+                            <span>View more</span>
+                            <img src="assets/images/btn-effect.png" class="effect" />
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ -->
+            <section class="section-faq" id="FAQ">
+                <div class="container">
+                    <h3 class="section-title">FA Questions</h3>
                     <img class="divider" src="assets/images/right-divider.png" alt="divider" />
-                </h3>
-
-                <div class="row" id="NewsSlide">
-                    <div class="col-md-4">
-                        <div class="news-item">
-                            <a class="image" href="#" title="New to">
-                                <img src="assets/images/news-1.png" alt="New to" />
-                            </a>
-                            <div class="info">
-                                <h3 class="title">New to</h3>
-                                <div class="description">
-                                    Follow us to get started on the Play-to-Earn journey that is never short of
-                                    excitement!
-                                </div>
-                                <div class="readmore">
-                                    <a href="#" title=""> Read more </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="news-item">
-                            <a class="image" href="#" title="New to">
-                                <img src="assets/images/news-2.png" alt="New to" />
-                            </a>
-                            <div class="info">
-                                <h3 class="title">New to</h3>
-                                <div class="description">
-                                    Follow us to get started on the Play-to-Earn journey that is never short of
-                                    excitement!
-                                </div>
-                                <div class="readmore">
-                                    <a href="#" title=""> Read more </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="news-item">
-                            <a class="image" href="#" title="New to">
-                                <img src="assets/images/news-3.png" alt="New to" />
-                            </a>
-                            <div class="info">
-                                <h3 class="title">New to</h3>
-                                <div class="description">
-                                    Follow us to get started on the Play-to-Earn journey that is never short of
-                                    excitement!
-                                </div>
-                                <div class="readmore">
-                                    <a href="#" title=""> Read more </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="viewmore">
-                    <a href="#" class="btn btn-primary">
-                        <span>View more</span>
-                        <img src="assets/images/btn-effect.png" class="effect" />
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ -->
-        <section class="section-faq" id="FAQ">
-            <div class="container">
-                <h3 class="section-title">FA Questions</h3>
-                <img class="divider" src="assets/images/right-divider.png" alt="divider" />
-                <div class="row gx-lg-5">
-                    <div class="col-lg-7">
-                        <ul class="nav nav-tabs" id="faqTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="general-tab" data-bs-toggle="tab"
-                                    data-bs-target="#general-tab-pane" type="button" role="tab"
-                                    aria-controls="general-tab-pane" aria-selected="true">
-                                    General
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="token-sales-tab" data-bs-toggle="tab"
-                                    data-bs-target="#token-sales-tab-pane" type="button" role="tab"
-                                    aria-controls="token-sales-tab-pane" aria-selected="false">
-                                    Token sales
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="legal-tab" data-bs-toggle="tab"
-                                    data-bs-target="#legal-tab-pane" type="button" role="tab"
-                                    aria-controls="legal-tab-pane" aria-selected="false">
-                                    Legal
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="roadmap-tab" data-bs-toggle="tab"
-                                    data-bs-target="#roadmap-tab-pane" type="button" role="tab"
-                                    aria-controls="roadmap-tab-pane" aria-selected="false">
-                                    Roadmap
-                                </button>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="faqTabContent">
-                            <!-- Tab General -->
-                            <div class="tab-pane fade show active" id="general-tab-pane" role="tabpanel"
-                                aria-labelledby="general-tab" tabindex="0">
-                                <div class="accordion" id="accordionFaqGeneral">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#collapse1" aria-expanded="true"
-                                                aria-controls="collapse1">
-                                                Question title #1
-                                            </button>
-                                        </h2>
-                                        <div id="collapse1" class="accordion-collapse collapse show"
-                                            data-bs-parent="#accordionFaqGeneral">
-                                            <div class="accordion-body">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et....
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapse2"
-                                                aria-expanded="false" aria-controls="collapse2">
-                                                Question title #2
-                                            </button>
-                                        </h2>
-                                        <div id="collapse2" class="accordion-collapse collapse"
-                                            data-bs-parent="#accordionFaqGeneral">
-                                            <div class="accordion-body">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et....
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapse3"
-                                                aria-expanded="false" aria-controls="collapse3">
-                                                Question title #3
-                                            </button>
-                                        </h2>
-                                        <div id="collapse3" class="accordion-collapse collapse"
-                                            data-bs-parent="#accordionFaqGeneral">
-                                            <div class="accordion-body">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et....
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapse4"
-                                                aria-expanded="false" aria-controls="collapse4">
-                                                Question title #4
-                                            </button>
-                                        </h2>
-                                        <div id="collapse4" class="accordion-collapse collapse"
-                                            data-bs-parent="#accordionFaqGeneral">
-                                            <div class="accordion-body">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et....
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapse5"
-                                                aria-expanded="false" aria-controls="collapse5">
-                                                Question title #5
-                                            </button>
-                                        </h2>
-                                        <div id="collapse5" class="accordion-collapse collapse"
-                                            data-bs-parent="#accordionFaqGeneral">
-                                            <div class="accordion-body">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et....
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Tab Token sales -->
-                            <div class="tab-pane fade" id="token-sales-tab-pane" role="tabpanel"
-                                aria-labelledby="token-sales-tab" tabindex="0">
-                                Token sales
-                            </div>
-
-                            <!-- Tab Legal -->
-                            <div class="tab-pane fade" id="legal-tab-pane" role="tabpanel" aria-labelledby="legal-tab"
-                                tabindex="0">
-                                Legal
-                            </div>
-
-                            <!-- Tab Roadmap -->
-                            <div class="tab-pane fade" id="roadmap-tab-pane" role="tabpanel"
-                                aria-labelledby="roadmap-tab" tabindex="0">
-                                Roadmap
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 text-lg-end">
-                        <img src="assets/images/faq.png" class="image img-fluid" />
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <!-- Footer top -->
-        <div class="footer-top">
-            <div class="container">
-                <div class="row gx-lg-5 gy-4 gy-xl-0">
-                    <div class="col-xl-4 col-xl-3">
-                        <img class="footer-logo" src="assets/images/logo.png" alt="Eternal Kingdoms" />
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="footer-menu">
-                            <h4>Partnership Inquiry</h4>
-                            <ul>
-                                <li>Commuity/Business Partnership <a href="#">Email Us</a></li>
-                                <li>Gaming Guild Application <a href="#">Email Us</a></li>
-                                <li>Creator Porogram <a href="#">Email Us</a></li>
+                    <div class="row gx-lg-5">
+                        <div class="col-lg-7">
+                            <ul class="nav nav-tabs" id="faqTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link active"
+                                        id="general-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#general-tab-pane"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="general-tab-pane"
+                                        aria-selected="true"
+                                    >
+                                        General
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link"
+                                        id="token-sales-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#token-sales-tab-pane"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="token-sales-tab-pane"
+                                        aria-selected="false"
+                                    >
+                                        Token sales
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link"
+                                        id="legal-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#legal-tab-pane"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="legal-tab-pane"
+                                        aria-selected="false"
+                                    >
+                                        Legal
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link"
+                                        id="roadmap-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#roadmap-tab-pane"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="roadmap-tab-pane"
+                                        aria-selected="false"
+                                    >
+                                        Roadmap
+                                    </button>
+                                </li>
                             </ul>
+                            <div class="tab-content" id="faqTabContent">
+                                <!-- Tab General -->
+                                <div
+                                    class="tab-pane fade show active"
+                                    id="general-tab-pane"
+                                    role="tabpanel"
+                                    aria-labelledby="general-tab"
+                                    tabindex="0"
+                                >
+                                    <div class="accordion" id="accordionFaqGeneral">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button
+                                                    class="accordion-button"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse1"
+                                                    aria-expanded="true"
+                                                    aria-controls="collapse1"
+                                                >
+                                                    Question title #1
+                                                </button>
+                                            </h2>
+                                            <div
+                                                id="collapse1"
+                                                class="accordion-collapse collapse show"
+                                                data-bs-parent="#accordionFaqGeneral"
+                                            >
+                                                <div class="accordion-body">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et....
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button
+                                                    class="accordion-button collapsed"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse2"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse2"
+                                                >
+                                                    Question title #2
+                                                </button>
+                                            </h2>
+                                            <div
+                                                id="collapse2"
+                                                class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFaqGeneral"
+                                            >
+                                                <div class="accordion-body">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et....
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button
+                                                    class="accordion-button collapsed"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse3"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse3"
+                                                >
+                                                    Question title #3
+                                                </button>
+                                            </h2>
+                                            <div
+                                                id="collapse3"
+                                                class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFaqGeneral"
+                                            >
+                                                <div class="accordion-body">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et....
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button
+                                                    class="accordion-button collapsed"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse4"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse4"
+                                                >
+                                                    Question title #4
+                                                </button>
+                                            </h2>
+                                            <div
+                                                id="collapse4"
+                                                class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFaqGeneral"
+                                            >
+                                                <div class="accordion-body">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et....
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button
+                                                    class="accordion-button collapsed"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse5"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse5"
+                                                >
+                                                    Question title #5
+                                                </button>
+                                            </h2>
+                                            <div
+                                                id="collapse5"
+                                                class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFaqGeneral"
+                                            >
+                                                <div class="accordion-body">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et....
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tab Token sales -->
+                                <div
+                                    class="tab-pane fade"
+                                    id="token-sales-tab-pane"
+                                    role="tabpanel"
+                                    aria-labelledby="token-sales-tab"
+                                    tabindex="0"
+                                >
+                                    Token sales
+                                </div>
+
+                                <!-- Tab Legal -->
+                                <div
+                                    class="tab-pane fade"
+                                    id="legal-tab-pane"
+                                    role="tabpanel"
+                                    aria-labelledby="legal-tab"
+                                    tabindex="0"
+                                >
+                                    Legal
+                                </div>
+
+                                <!-- Tab Roadmap -->
+                                <div
+                                    class="tab-pane fade"
+                                    id="roadmap-tab-pane"
+                                    role="tabpanel"
+                                    aria-labelledby="roadmap-tab"
+                                    tabindex="0"
+                                >
+                                    Roadmap
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 text-lg-end">
+                            <img src="assets/images/faq.png" class="image img-fluid" />
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="footer-menu">
-                            <h4>Game Support Inquiry</h4>
-                            <div class="d-flex gap-3 align-items-start">
-                                <img src="assets/images/support.png" alt="support" />
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <!-- Footer top -->
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row gx-lg-5 gy-4 gy-xl-0">
+                        <div class="col-xl-4 col-xl-3">
+                            <img class="footer-logo" src="assets/images/logo.png" alt="Eternal Kingdoms" />
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <div class="footer-menu">
+                                <h4>Partnership Inquiry</h4>
                                 <ul>
-                                    <li><a href="#">Wolffun Helpshift</a></li>
-                                    <li><a href="#">Discord - Game Support Channel</a></li>
-                                    <li><a href="#">Discord - Marketplace Support Channel</a></li>
-                                    <li><a href="#">Email Us</a></li>
+                                    <li>Commuity/Business Partnership <a href="#">Email Us</a></li>
+                                    <li>Gaming Guild Application <a href="#">Email Us</a></li>
+                                    <li>Creator Porogram <a href="#">Email Us</a></li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Footer divider -->
-        <div class="footer-divider">
-            <div class="container">
-                <img src="assets/images/bottom-divider.png" alt="divider" />
-            </div>
-        </div>
-
-        <!-- Footer contact form -->
-        <div class="footer-contact-form">
-            <div class="container">
-                <h4>Contact: <a href="mailto:123123123@gmail.com">123123123@gmail.com</a></h4>
-                <div class="row g-3">
-                    <div class="col-lg-3 col-sm-6">
-                        <input type="text" class="form-control" placeholder="Name" />
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <input type="email" class="form-control" placeholder="Mail" />
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <input type="text" class="form-control" placeholder="Description" />
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <button type="submit" class="btn btn-primary w-100">
-                            <span>Send</span>
-                            <img src="assets/images/btn-effect.png" class="effect" />
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Footer contract address -->
-        <div class="footer-contract-address">
-            <div class="container">
-                <div class="row gx-sm-5">
-                    <div class="col-lg-6">
-                        <div class="contract-address">
-                            <label>
-                                <span class="icon"></span>
-                                <span>TK Contact Address</span>
-                            </label>
-                            <div class="contract-address-value">
-                                <span>ADF20</span>
-                                <i></i>
-                                <span>012asycdddgttsfhk1123344456789kjgfaa</span>
-                                <button type="button">
-                                    <img src="assets/images/icons/icon-copy.png" alt="copy" />
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 text-lg-end">
-                        <div class="contract-address">
-                            <label>
-                                <span class="icon"></span>
-                                <span>TK Contact Address</span>
-                            </label>
-                            <div class="contract-address-value">
-                                <span>ADF20</span>
-                                <i></i>
-                                <span>012asycdddgttsfhk1123344456789kjgfaa</span>
-                                <button type="button">
-                                    <img src="assets/images/icons/icon-copy.png" alt="copy" />
-                                </button>
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <div class="footer-menu">
+                                <h4>Game Support Inquiry</h4>
+                                <div class="d-flex gap-3 align-items-start">
+                                    <img src="assets/images/support.png" alt="support" />
+                                    <ul>
+                                        <li><a href="#">Wolffun Helpshift</a></li>
+                                        <li><a href="#">Discord - Game Support Channel</a></li>
+                                        <li><a href="#">Discord - Marketplace Support Channel</a></li>
+                                        <li><a href="#">Email Us</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Footer copyright -->
-        <div class="footer-copyright">
-            <div class="container">Kingdoms.game</div>
-        </div>
-    </footer>
-
-    <!-- Modal Video -->
-    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <!-- Footer divider -->
+            <div class="footer-divider">
+                <div class="container">
+                    <img src="assets/images/bottom-divider.png" alt="divider" />
                 </div>
-                <div class="modal-body">
-                    <iframe style="width: 100%; min-height:80vh" src="#" frameborder="0" allow="autoplay"></iframe>
+            </div>
+
+            <!-- Footer contact form -->
+            <div class="footer-contact-form">
+                <div class="container">
+                    <h4>Contact: <a href="mailto:123123123@gmail.com">123123123@gmail.com</a></h4>
+                    <div class="row g-3">
+                        <div class="col-lg-3 col-sm-6">
+                            <input type="text" class="form-control" placeholder="Name" />
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <input type="email" class="form-control" placeholder="Mail" />
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <input type="text" class="form-control" placeholder="Description" />
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <button type="submit" class="btn btn-primary w-100">
+                                <span>Send</span>
+                                <img src="assets/images/btn-effect.png" class="effect" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer contract address -->
+            <div class="footer-contract-address">
+                <div class="container">
+                    <div class="row gx-sm-5">
+                        <div class="col-lg-6">
+                            <div class="contract-address">
+                                <label>
+                                    <span class="icon"></span>
+                                    <span>TK Contact Address</span>
+                                </label>
+                                <div class="contract-address-value">
+                                    <span>ADF20</span>
+                                    <i></i>
+                                    <span>012asycdddgttsfhk1123344456789kjgfaa</span>
+                                    <button type="button">
+                                        <img src="assets/images/icons/icon-copy.png" alt="copy" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-lg-end">
+                            <div class="contract-address">
+                                <label>
+                                    <span class="icon"></span>
+                                    <span>TK Contact Address</span>
+                                </label>
+                                <div class="contract-address-value">
+                                    <span>ADF20</span>
+                                    <i></i>
+                                    <span>012asycdddgttsfhk1123344456789kjgfaa</span>
+                                    <button type="button">
+                                        <img src="assets/images/icons/icon-copy.png" alt="copy" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer copyright -->
+            <div class="footer-copyright">
+                <div class="container">Kingdoms.game</div>
+            </div>
+        </footer>
+
+        <!-- Modal Video -->
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe style="width: 100%; min-height: 80vh" src="#" frameborder="0" allow="autoplay"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/plugins/slick-1.8.1/slick.min.js"></script>
-    <script type="text/javascript" src="assets/js/scripts.js?v=1.4"></script>
-</body>
-
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+        <script type="text/javascript" src="assets/plugins/slick-1.8.1/slick.min.js"></script>
+        <script type="text/javascript" src="assets/js/scripts.js?v=1.5"></script>
+    </body>
 </html>

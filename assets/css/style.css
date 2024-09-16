@@ -642,6 +642,7 @@ header .header-navbar .close-menu {
 .section-install {
   padding: 125px 0 52px;
   position: relative;
+  overflow: hidden;
 }
 @media (max-width: 1399px) {
   .section-install {
@@ -810,11 +811,80 @@ header .header-navbar .close-menu {
   position: absolute;
   bottom: 0;
   right: 0;
-  max-width: 50%;
+  width: 760px;
+}
+.section-install .image .hidden {
+  visibility: hidden;
+}
+.section-install .image .img {
+  position: absolute;
+  top: 13px;
+  left: 134px;
+  animation: moveupleft 5s infinite;
+}
+.section-install .image .icon {
+  position: absolute;
+}
+.section-install .image .icon.icon-1 {
+  top: 0;
+  left: 81px;
+  animation: movedown 3s infinite;
+}
+.section-install .image .icon.icon-2 {
+  top: 63px;
+  left: 560px;
+  transform-origin: center;
+  animation: spin 5s infinite;
+}
+.section-install .image .icon.icon-3 {
+  top: 270px;
+  left: 0;
+  animation: moveright 10s infinite;
+}
+.section-install .image .icon.icon-4 {
+  top: 472px;
+  left: 134px;
+  animation: movedown 8s infinite;
 }
 @media (max-width: 991px) {
   .section-install .image {
     display: none;
+  }
+}
+@keyframes movedown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+@keyframes moveright {
+  0%, 100% {
+    transform: rotate(180deg);
+    margin-left: -50px;
+  }
+  50% {
+    transform: rotate(0);
+    margin-left: 50px;
+  }
+}
+@keyframes moveupleft {
+  0%, 100% {
+    transform: translateY(-50px) translateX(-50px);
+  }
+  50% {
+    transform: translateY(0) translateX(0);
+  }
+}
+@keyframes spin {
+  0%, 100% {
+    transform: rotate(180deg) scale(1.1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: rotate(0) scale(0.9);
+    opacity: 1;
   }
 }
 
@@ -972,14 +1042,9 @@ header .header-navbar .close-menu {
 }
 
 .section-about {
-  padding: 180px 0 0;
+  padding: 90px 0 0;
   position: relative;
   overflow: hidden;
-}
-@media (max-width: 1399px) {
-  .section-about {
-    padding-top: 90px;
-  }
 }
 @media (max-width: 1199px) {
   .section-about {
@@ -1011,8 +1076,7 @@ header .header-navbar .close-menu {
   }
 }
 .section-about .section-title {
-  margin-top: 30px;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 @media (max-width: 991px) {
   .section-about .section-title br {
@@ -1020,37 +1084,10 @@ header .header-navbar .close-menu {
   }
 }
 .section-about .divider {
-  margin-bottom: 65px;
+  margin-bottom: 30px;
 }
 @media (max-width: 991px) {
   .section-about .divider {
-    display: none;
-  }
-}
-.section-about .year {
-  padding-top: 100px;
-  text-align: right;
-  font-family: "Gobold Extra2", sans-serif;
-  font-size: 208px;
-  line-height: 1;
-  color: rgba(0, 255, 252, 0.52);
-  opacity: 0.17;
-  visibility: hidden;
-}
-@media (max-width: 1399px) {
-  .section-about .year {
-    font-size: 180px;
-    padding-top: 50px;
-  }
-}
-@media (max-width: 1199px) {
-  .section-about .year {
-    font-size: 150px;
-    padding-top: 0;
-  }
-}
-@media (max-width: 991px) {
-  .section-about .year {
     display: none;
   }
 }
@@ -1059,76 +1096,48 @@ header .header-navbar .close-menu {
     margin-bottom: 40px;
   }
 }
-.section-about .info {
-  position: relative;
-}
-.section-about .info .box {
-  position: absolute;
-  bottom: -100px;
-  right: 0;
-  padding: 30px 35px 35px 35px;
-  width: 78%;
-  font-family: "Friz Quadrata Std Medium", sans-serif;
-  font-size: 18px;
-  background-image: url(../images/about-box-bg.png);
-  background-size: 100% 100%;
-}
-@media (max-width: 1199px) {
-  .section-about .info .box {
-    font-size: 16px;
-    padding: 20px 20px 20px 30px;
-    bottom: -150px;
-  }
-}
-@media (max-width: 991px) {
-  .section-about .info .box {
-    bottom: -120px;
-  }
-}
-@media (max-width: 767px) {
-  .section-about .info .box {
-    bottom: -210px;
-  }
-}
-@media (max-width: 575px) {
-  .section-about .info .box {
-    position: relative;
-    bottom: 0;
-    margin-top: -90px;
-    margin-left: 60px;
-    background-image: none;
-    padding-right: 0;
-  }
-}
-.section-about .info .box .title {
+.section-about .title {
   font-family: "Friz Quadrata Std Bold", sans-serif;
   font-size: 36px;
 }
 @media (max-width: 1199px) {
-  .section-about .info .box .title {
+  .section-about .title {
     font-size: 30px;
   }
 }
+.section-about .description {
+  font-family: "Friz Quadrata Std Medium", sans-serif;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.section-about .image {
+  position: relative;
+}
+.section-about .image::before {
+  content: "";
+  background-image: url(../images/game-play-border.png);
+  background-size: 100% 100%;
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: calc(100% + 15px);
+  height: calc(100% + 15px);
+  z-index: -1;
+}
 .section-about .pagination {
-  padding-top: 140px;
   display: flex;
   align-items: center;
   gap: 64px;
+  padding-top: 40px;
 }
 @media (max-width: 1199px) {
   .section-about .pagination {
-    padding-top: 180px;
     gap: 30px;
   }
 }
 @media (max-width: 991px) {
   .section-about .pagination {
     justify-content: center;
-  }
-}
-@media (max-width: 767px) {
-  .section-about .pagination {
-    padding-top: 230px;
   }
 }
 @media (max-width: 575px) {
@@ -1529,6 +1538,9 @@ header .header-navbar .close-menu {
 .section-hero {
   position: relative;
 }
+.section-hero .section-title {
+  font-size: 40px;
+}
 .section-hero .slick-arrow {
   top: calc(50% + 20px);
 }
@@ -1672,6 +1684,11 @@ header .header-navbar .close-menu {
 .section-hero .hero-item .hero-info .description {
   font-family: "Friz Quadrata Std Medium", sans-serif;
   font-size: 18px;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .section-hero .hero-nav {
   position: absolute;
