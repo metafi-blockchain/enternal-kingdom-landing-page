@@ -702,6 +702,7 @@ header {
                 font-family: 'Friz Quadrata Std Medium', sans-serif;
                 font-size: 18px;
                 color: #fff;
+                white-space: nowrap;
                 @media (max-width: 1399px) {
                     height: 56px;
                     img {
@@ -716,12 +717,37 @@ header {
                 }
             }
         }
-        .install-ad {
-            @media (max-width: 1199px) {
-                height: 90px;
+        .more {
+            display: flex;
+            gap: 20px;
+            @media (max-width: 1399px) {
+                gap: 15px;
             }
-            @media (max-width: 991px) {
-                height: 80px;
+            @media (max-width: 576px){
+                justify-content: space-between;
+            }
+            a{
+                &:hover{
+                    img{
+                        opacity: .8;
+                    }
+                }
+            }
+            img{
+                height: 170px;
+                transition: all ease-in-out .3s;
+                @media (max-width: 1399px) {
+                    height: 125px;
+                }
+                @media (max-width: 1199px) {
+                    height: 90px;
+                }
+                @media (max-width: 991px) {
+                    height: 80px;
+                }
+                @media (max-width: 576px) {
+                    height: 70px;
+                }
             }
         }
     }
@@ -1141,7 +1167,7 @@ header {
                 height: 60px;
             }
             &:nth-child(2),
-            &:nth-child(4) ,
+            &:nth-child(4),
             &:nth-child(6) {
                 margin-right: 70px;
                 margin-top: -50px;
@@ -1275,7 +1301,7 @@ header {
         flex-direction: column;
         position: relative;
         padding: 50px 40px 0;
-        &.active{
+        &.active {
             display: flex;
         }
         @media (max-width: 1199px) {
@@ -1407,7 +1433,7 @@ header {
                 display: none;
             }
         }
-        .preview{
+        .preview {
             position: absolute;
             z-index: 4;
             top: 20%;
@@ -2520,7 +2546,7 @@ footer {
             margin-bottom: 50px;
         }
     }
-    footer{
+    footer {
         padding: 0 !important;
     }
 }
