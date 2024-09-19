@@ -1388,6 +1388,7 @@ header {
     }
     .hero-item {
         position: relative;
+        overflow: hidden;
         &::before {
             content: '';
             position: absolute;
@@ -1402,6 +1403,16 @@ header {
         }
         > .image {
             width: 100%;
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+        .preview{
+            position: absolute;
+            z-index: 4;
+            top: 20%;
+            left: 10%;
+            min-width: 500px;
             @media (max-width: 767px) {
                 display: none;
             }

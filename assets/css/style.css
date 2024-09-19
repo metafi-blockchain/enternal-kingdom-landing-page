@@ -1562,6 +1562,7 @@ header .header-navbar .close-menu {
 }
 .section-hero .hero-item {
   position: relative;
+  overflow: hidden;
 }
 .section-hero .hero-item::before {
   content: "";
@@ -1582,6 +1583,18 @@ header .header-navbar .close-menu {
 }
 @media (max-width: 767px) {
   .section-hero .hero-item > .image {
+    display: none;
+  }
+}
+.section-hero .hero-item .preview {
+  position: absolute;
+  z-index: 4;
+  top: 20%;
+  left: 10%;
+  min-width: 500px;
+}
+@media (max-width: 767px) {
+  .section-hero .hero-item .preview {
     display: none;
   }
 }
