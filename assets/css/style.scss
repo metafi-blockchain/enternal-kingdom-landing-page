@@ -297,7 +297,7 @@ body {
         span {
             white-space: nowrap;
             @media (max-width: 767px) {
-                white-space: unset;
+                white-space: normal;
             }
         }
     }
@@ -459,7 +459,7 @@ header {
     background-position: top center;
     position: relative;
     overflow: hidden;
-    #background-video{
+    #background-video {
         position: absolute;
         top: 0;
         left: 0;
@@ -712,6 +712,12 @@ header {
                 font-size: 18px;
                 color: #fff;
                 white-space: nowrap;
+                transition: all ease-in-out 0.3s;
+                &:not(.readonly) {
+                    &:hover {
+                        background-color: #2e55d0;
+                    }
+                }
                 @media (max-width: 1399px) {
                     height: 56px;
                     img {
@@ -735,16 +741,17 @@ header {
             @media (max-width: 375px) {
                 gap: 12px;
             }
-            a{
-                &:hover{
-                    img{
-                        opacity: .8;
+            a {
+                &:hover {
+                    img {
+                        transform: scale(1.05);
                     }
                 }
             }
-            img{
+            img {
+                transform-origin: center;
                 height: 170px;
-                transition: all ease-in-out .3s;
+                transition: all ease-in-out 0.3s;
                 @media (max-width: 1399px) {
                     height: 125px;
                 }
@@ -1351,6 +1358,10 @@ header {
             line-height: 1.2;
             @media (max-width: 991px) {
                 margin-bottom: 15px;
+                font-size: 32px;
+            }
+            @media (max-width: 767px) {
+                font-size: 24px;
             }
         }
         .description {
@@ -1370,7 +1381,12 @@ header {
         .decor {
             margin-top: auto;
             text-align: right;
-            margin-top: -50px;
+            margin-top: -100px;
+            margin-right: -20px;
+            margin-bottom: -30px;
+            @media (max-width: 1199px) {
+                display: none;
+            }
             img {
                 margin-right: -50px;
                 @media (max-width: 1399px) {
@@ -1659,6 +1675,7 @@ header {
         }
         @media (max-width: 991px) {
             margin-top: 50px;
+            gap: 5px;
         }
         .nav-item {
             @media (max-width: 767px) {
@@ -1683,7 +1700,6 @@ header {
 
                 @media (max-width: 575px) {
                     font-size: 18px;
-                    padding: 4px 8px;
                     border-radius: 5px;
                 }
                 &.active {

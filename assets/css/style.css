@@ -311,7 +311,7 @@ body {
 }
 @media (max-width: 767px) {
   .section-title.center span {
-    white-space: unset;
+    white-space: normal;
   }
 }
 
@@ -793,6 +793,10 @@ header .header-navbar .close-menu {
   font-size: 18px;
   color: #fff;
   white-space: nowrap;
+  transition: all ease-in-out 0.3s;
+}
+.section-install .info .download-links a:not(.readonly):hover {
+  background-color: #2e55d0;
 }
 @media (max-width: 1399px) {
   .section-install .info .download-links a {
@@ -823,9 +827,10 @@ header .header-navbar .close-menu {
   }
 }
 .section-install .info .more a:hover img {
-  opacity: 0.8;
+  transform: scale(1.05);
 }
 .section-install .info .more img {
+  transform-origin: center;
   height: 170px;
   transition: all ease-in-out 0.3s;
 }
@@ -1513,6 +1518,12 @@ header .header-navbar .close-menu {
 @media (max-width: 991px) {
   .section-gameplay .info .title {
     margin-bottom: 15px;
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .section-gameplay .info .title {
+    font-size: 24px;
   }
 }
 .section-gameplay .info .description {
@@ -1536,7 +1547,14 @@ header .header-navbar .close-menu {
 .section-gameplay .info .decor {
   margin-top: auto;
   text-align: right;
-  margin-top: -50px;
+  margin-top: -100px;
+  margin-right: -20px;
+  margin-bottom: -30px;
+}
+@media (max-width: 1199px) {
+  .section-gameplay .info .decor {
+    display: none;
+  }
 }
 .section-gameplay .info .decor img {
   margin-right: -50px;
@@ -1880,6 +1898,7 @@ header .header-navbar .close-menu {
 @media (max-width: 991px) {
   .section-token .nav {
     margin-top: 50px;
+    gap: 5px;
   }
 }
 @media (max-width: 767px) {
@@ -1905,7 +1924,6 @@ header .header-navbar .close-menu {
 @media (max-width: 575px) {
   .section-token .nav .nav-item .nav-link {
     font-size: 18px;
-    padding: 4px 8px;
     border-radius: 5px;
   }
 }
