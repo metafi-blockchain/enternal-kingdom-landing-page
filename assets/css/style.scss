@@ -458,6 +458,13 @@ header {
     background-repeat: no-repeat;
     background-position: top center;
     position: relative;
+    #background-video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        object-fit: cover;
+    }
     @media (max-width: 575px) {
         margin-top: 60px;
     }
@@ -1962,6 +1969,7 @@ header {
             position: relative;
             background-image: url(../images/roadmap-item.png);
             background-size: 100% 100%;
+            min-height: 320px;
             @media (max-width: 1199px) {
                 min-height: 300px;
             }

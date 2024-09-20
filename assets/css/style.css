@@ -500,6 +500,14 @@ header .header-navbar .close-menu {
   background-position: top center;
   position: relative;
 }
+.section-banner #background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 @media (max-width: 575px) {
   .section-banner {
     margin-top: 60px;
@@ -2213,6 +2221,7 @@ header .header-navbar .close-menu {
   position: relative;
   background-image: url(../images/roadmap-item.png);
   background-size: 100% 100%;
+  min-height: 320px;
 }
 @media (max-width: 1199px) {
   .section-roadmap .roadmap-item .info {
