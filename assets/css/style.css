@@ -498,6 +498,7 @@ header .header-navbar .close-menu {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: top center;
+  position: relative;
 }
 @media (max-width: 575px) {
   .section-banner {
