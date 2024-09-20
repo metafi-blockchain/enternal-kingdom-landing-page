@@ -499,6 +499,7 @@ header .header-navbar .close-menu {
   background-repeat: no-repeat;
   background-position: top center;
   position: relative;
+  overflow: hidden;
 }
 .section-banner #background-video {
   position: absolute;
