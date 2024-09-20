@@ -807,9 +807,9 @@ header .header-navbar .close-menu {
     gap: 15px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 375px) {
   .section-install .info .more {
-    justify-content: space-between;
+    gap: 12px;
   }
 }
 .section-install .info .more a:hover img {
@@ -836,7 +836,7 @@ header .header-navbar .close-menu {
 }
 @media (max-width: 576px) {
   .section-install .info .more img {
-    height: 70px;
+    height: 75px;
   }
 }
 .section-install .image {
