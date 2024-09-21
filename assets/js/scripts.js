@@ -77,6 +77,7 @@ $('.about-slide').slick({
     arrows: false,
     dots: false,
     autoplay: true,
+    fade: true,
     autoplaySpeed: 2000,
     asNavFor: '.pagination',
     infinite: true,
