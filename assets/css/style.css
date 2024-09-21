@@ -792,6 +792,10 @@ header .header-navbar .close-menu {
   white-space: nowrap;
   transition: all ease-in-out 0.3s;
 }
+.section-install .info .download-links a.readonly {
+  opacity: 0.5;
+  cursor: default;
+}
 .section-install .info .download-links a:not(.readonly):hover {
   background-color: #2e55d0;
 }
@@ -2112,6 +2116,18 @@ header .header-navbar .close-menu {
   font-size: 18px;
   color: #fff;
   line-height: 20px;
+}
+.section-token .dao-image {
+  max-width: 100%;
+}
+.section-token .dao-title {
+  font-family: "Friz Quadrata Std Bold", sans-serif;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.section-token .dao-description {
+  font-family: "Friz Quadrata Std Medium", sans-serif;
+  font-size: 18px;
 }
 
 .section-roadmap {

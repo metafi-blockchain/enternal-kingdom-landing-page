@@ -708,6 +708,10 @@ header {
                 color: #fff;
                 white-space: nowrap;
                 transition: all ease-in-out 0.3s;
+                &.readonly{
+                    opacity: .5;
+                    cursor: default;
+                }
                 &:not(.readonly) {
                     &:hover {
                         background-color: #2e55d0;
@@ -1868,6 +1872,18 @@ header {
                 line-height: 20px;
             }
         }
+    }
+    .dao-image{
+        max-width: 100%;
+    }
+    .dao-title{
+        font-family: 'Friz Quadrata Std Bold', sans-serif;
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    .dao-description{
+        font-family: 'Friz Quadrata Std Medium', sans-serif;
+        font-size: 18px;
     }
 }
 .section-roadmap {
