@@ -1182,9 +1182,8 @@ header .header-navbar .close-menu {
   z-index: -1;
 }
 .section-about .pagination {
-  display: flex;
-  align-items: center;
-  gap: 64px;
+  width: 560px;
+  max-width: 100%;
   padding-top: 40px;
 }
 @media (max-width: 1199px) {
@@ -1201,6 +1200,12 @@ header .header-navbar .close-menu {
   .section-about .pagination {
     padding-top: 30px;
   }
+}
+.section-about .pagination .slick-current button {
+  background-color: #00fffc;
+}
+.section-about .pagination .slick-track {
+  transform: none !important;
 }
 .section-about .pagination button {
   width: 128px;

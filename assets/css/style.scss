@@ -1083,9 +1083,8 @@ header {
         }
     }
     .pagination {
-        display: flex;
-        align-items: center;
-        gap: 64px;
+        width: 560px;
+        max-width: 100%;
         padding-top: 40px;
         @media (max-width: 1199px) {
             gap: 30px;
@@ -1095,6 +1094,14 @@ header {
         }
         @media (max-width: 575px) {
             padding-top: 30px;
+        }
+        .slick-current{
+            button{
+                background-color: #00fffc;
+            }
+        }
+        .slick-track{
+            transform: none !important;
         }
         button {
             width: 128px;

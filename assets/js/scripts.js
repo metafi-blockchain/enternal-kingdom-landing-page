@@ -71,6 +71,24 @@ $('.hero-slide-nav').slick({
         },
     ],
 });
+$('.about-slide').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    asNavFor: '.pagination',
+    infinite: true,
+});
+$('.pagination').slick({
+    slidesToShow: 3,
+    asNavFor: '.about-slide',
+    arrows: false,
+    dots: false,
+    focusOnSelect: true,
+    infinite: true,
+});
 function setNewsSlide() {
     const viewportWidth = $(window).width();
     if (viewportWidth >= 768) {
