@@ -775,9 +775,6 @@ header .header-navbar .close-menu {
   .section-install .info .download-links {
     flex-wrap: wrap;
   }
-  .section-install .info .download-links a:last-child {
-    width: 100%;
-  }
 }
 .section-install .info .download-links a {
   display: flex;
@@ -804,6 +801,15 @@ header .header-navbar .close-menu {
   }
   .section-install .info .download-links a img {
     height: 28px;
+  }
+}
+@media (max-width: 575px) {
+  .section-install .info .download-links a {
+    padding: 10px 15px;
+    width: calc(50% - 6px);
+  }
+  .section-install .info .download-links a:nth-child(3), .section-install .info .download-links a:nth-child(4) {
+    width: 100%;
   }
 }
 .section-install .info .download-links a span {

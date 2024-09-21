@@ -692,11 +692,6 @@ header {
             }
             @media (max-width: 575px) {
                 flex-wrap: wrap;
-                a {
-                    &:last-child {
-                        width: 100%;
-                    }
-                }
             }
             a {
                 display: flex;
@@ -722,6 +717,14 @@ header {
                     height: 56px;
                     img {
                         height: 28px;
+                    }
+                }
+                @media (max-width: 575px) {
+                    padding: 10px 15px;
+                    width: calc(50% - 6px);
+                    &:nth-child(3),
+                    &:nth-child(4) {
+                        width: 100%;
                     }
                 }
                 span {
