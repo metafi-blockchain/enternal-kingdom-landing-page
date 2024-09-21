@@ -708,8 +708,8 @@ header {
                 color: #fff;
                 white-space: nowrap;
                 transition: all ease-in-out 0.3s;
-                &.readonly{
-                    opacity: .5;
+                &.readonly {
+                    opacity: 0.5;
                     cursor: default;
                 }
                 &:not(.readonly) {
@@ -1095,12 +1095,12 @@ header {
         @media (max-width: 575px) {
             padding-top: 30px;
         }
-        .slick-current{
-            button{
+        .slick-current {
+            button {
                 background-color: #00fffc;
             }
         }
-        .slick-track{
+        .slick-track {
             transform: none !important;
         }
         button {
@@ -1880,15 +1880,15 @@ header {
             }
         }
     }
-    .dao-image{
+    .dao-image {
         max-width: 100%;
     }
-    .dao-title{
+    .dao-title {
         font-family: 'Friz Quadrata Std Bold', sans-serif;
         font-size: 32px;
         margin-bottom: 10px;
     }
-    .dao-description{
+    .dao-description {
         font-family: 'Friz Quadrata Std Medium', sans-serif;
         font-size: 18px;
     }
@@ -2603,4 +2603,11 @@ footer {
     footer {
         padding: 0 !important;
     }
+}
+video::-webkit-media-controls {
+    display: none !important;
+    opacity: 0;
+}
+video::-webkit-media-controls-start-playback-button {
+    display: none !important;
 }
