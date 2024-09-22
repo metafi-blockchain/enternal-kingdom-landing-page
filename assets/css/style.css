@@ -508,6 +508,11 @@ header .header-navbar .close-menu {
   width: 100vw;
   -o-object-fit: cover;
      object-fit: cover;
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+}
+.section-banner #background-video.show {
+  opacity: 1;
 }
 @media (max-width: 575px) {
   .section-banner {
@@ -2974,9 +2979,19 @@ footer .footer-copyright {
   -webkit-appearance: none;
 }
 
-*::--webkit-media-controls-play-button {
-  display: none !important;
-  -webkit-appearance: none;
+video::-webkit-media-controls-enclosure {
+  width: 100%;
+  background-color: transparent;
+  border-radius: 1px !important;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+  margin-bottom: -20px;
+  overflow: hidden;
+}
+
+video::-webkit-media-controls-panel {
+  background-color: #eee;
+  height: 35px !important;
 }
 
 *::-webkit-media-controls-start-playback-button {
@@ -2996,4 +3011,9 @@ video::slotted::-webkit-media-controls-container {
   visibility: hidden !important;
   opacity: 0 !important;
   -webkit-appearance: none !important;
+}
+
+*::state(webkit-media-controls-play-button) {
+  display: none !important;
+  -webkit-appearance: none;
 }/*# sourceMappingURL=style.css.map */

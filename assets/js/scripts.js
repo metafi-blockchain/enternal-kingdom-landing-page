@@ -157,10 +157,12 @@ var topMenu = $('#MainMenu'),
     // Anchors corresponding to menu items
     scrollItems = menuItems.map(function () {
         if ($(this).attr('href') && $(this).attr('href') !== '#') {
-            var item = $($(this).attr('href'));
-            if (item.length) {
-                return item;
-            }
+            try {
+                var item = $($(this).attr('href'));
+                if (item.length) {
+                    return item;
+                }
+            } catch {}
         }
     });
 
@@ -225,4 +227,9 @@ $(window).scroll(function () {
         });
         a = 1;
     }
+});
+$(window).on('load', () => {
+    setTimeout(() => {
+        $('#background-video').addClass('show');
+    }, 2000);
 });
