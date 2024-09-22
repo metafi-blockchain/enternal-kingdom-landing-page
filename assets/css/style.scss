@@ -1366,7 +1366,7 @@ header {
             z-index: -1;
         }
         .title {
-            font-size: 36px;
+            font-size: 32px;
             font-family: 'Friz Quadrata Std Bold', sans-serif;
             margin-bottom: 24px;
             line-height: 1.2;
@@ -1393,11 +1393,9 @@ header {
             }
         }
         .decor {
-            margin-top: auto;
-            text-align: right;
-            margin-top: -100px;
-            margin-right: -20px;
-            margin-bottom: -30px;
+            position: absolute;
+            bottom: 0px;
+            right: 20px;
             @media (max-width: 1199px) {
                 display: none;
             }
@@ -1415,6 +1413,9 @@ header {
     }
     .image {
         position: relative;
+        @media(min-width:1200px){
+            min-height: 680px;
+        }
         @media (max-width: 991px) {
             height: 350px;
             overflow: hidden;
@@ -2604,10 +2605,30 @@ footer {
         padding: 0 !important;
     }
 }
-video::-webkit-media-controls {
+*::-webkit-media-controls-panel {
     display: none !important;
-    opacity: 0;
+    -webkit-appearance: none;
 }
-video::-webkit-media-controls-start-playback-button {
+
+*::--webkit-media-controls-play-button {
     display: none !important;
+    -webkit-appearance: none;
+}
+
+*::-webkit-media-controls-start-playback-button {
+    display: none !important;
+    -webkit-appearance: none;
+}
+
+:host::shadow::-webkit-media-controls-container {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    -webkit-appearance: none !important;
+}
+video::slotted::-webkit-media-controls-container {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    -webkit-appearance: none !important;
 }
