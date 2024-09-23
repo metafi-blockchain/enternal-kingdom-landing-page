@@ -1530,7 +1530,7 @@ header .header-navbar .close-menu {
   z-index: -1;
 }
 .section-gameplay .info .title {
-  font-size: 32px;
+  font-size: 34px;
   font-family: "Friz Quadrata Std Bold", sans-serif;
   margin-bottom: 24px;
   line-height: 1.2;
@@ -1566,7 +1566,7 @@ header .header-navbar .close-menu {
 }
 .section-gameplay .info .decor {
   position: absolute;
-  bottom: 0px;
+  bottom: -20px;
   right: 20px;
 }
 @media (max-width: 1199px) {
