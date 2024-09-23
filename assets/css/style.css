@@ -1591,6 +1591,9 @@ header .header-navbar .close-menu {
 .section-gameplay .image {
   position: relative;
 }
+.section-gameplay .image img {
+  border-radius: 20px;
+}
 @media (min-width: 1200px) {
   .section-gameplay .image {
     min-height: 680px;

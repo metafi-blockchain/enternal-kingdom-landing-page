@@ -466,8 +466,8 @@ header {
         width: 100vw;
         object-fit: cover;
         opacity: 0;
-        transition: all ease-in-out .3s;
-        &.show{
+        transition: all ease-in-out 0.3s;
+        &.show {
             opacity: 1;
         }
     }
@@ -1418,7 +1418,10 @@ header {
     }
     .image {
         position: relative;
-        @media(min-width:1200px){
+        img {
+            border-radius: 20px;
+        }
+        @media (min-width: 1200px) {
             min-height: 680px;
         }
         @media (max-width: 991px) {
@@ -2616,19 +2619,19 @@ footer {
 }
 
 video::-webkit-media-controls-enclosure {
-    width:100%;
-    background-color:transparent;
+    width: 100%;
+    background-color: transparent;
     -moz-border-radius: 1px !important;
     -webkit-border-radius: 1px !important;
     border-radius: 1px !important;
     filter: alpha(opacity=80);
     opacity: 0.8;
-    margin-bottom:-20px;
+    margin-bottom: -20px;
     overflow: hidden;
 }
 video::-webkit-media-controls-panel {
     background-color: #eee;
-    height:35px !important;
+    height: 35px !important;
 }
 *::-webkit-media-controls-start-playback-button {
     display: none !important;
