@@ -466,7 +466,7 @@ header {
         width: 100vw;
         object-fit: cover;
         opacity: 0;
-        transition: all ease-in-out 0.3s;
+        transition: all ease-in-out 0.5s;
         &.show {
             opacity: 1;
         }
