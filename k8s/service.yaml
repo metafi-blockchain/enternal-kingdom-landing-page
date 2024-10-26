@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: enteral-kingdom-service
+spec:
+  type: NodePort
+  selector:
+    app: enteral-kingdom-landing-page
+  ports:
+  - protocol: TCP
+    port: 80          # Port của container
+    targetPort: 80    # Port mà container đang nghe
+    nodePort: 30001   # Port sẽ mở trên node để truy cập từ bên ngoài
