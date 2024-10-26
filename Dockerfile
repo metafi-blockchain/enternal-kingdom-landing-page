@@ -1,7 +1,7 @@
 FROM nginx:stable-alpine
 
 # Sao chép các file build từ image trước vào thư mục của Nginx
-COPY ./build /usr/share/nginx/html
+COPY ./website /usr/share/nginx/html
 
 EXPOSE 80
 
