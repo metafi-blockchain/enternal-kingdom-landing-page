@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: enteral-kingdom-landing-page
-  namespace: metafi-k8s
+  namespace: enternal-kingdom
 spec:
   replicas: 2
   selector:

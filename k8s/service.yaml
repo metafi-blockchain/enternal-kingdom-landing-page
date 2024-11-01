@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: enteral-kingdom-service
-  namespace: metafi-k8s
+  name: landing-page-service
+  namespace: enternal-kingdom
 spec:
   type: NodePort
   selector:
