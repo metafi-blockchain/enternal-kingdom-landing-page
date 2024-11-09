@@ -1,19 +1,22 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: kingdoms-game-ingress
+  name: landing-page-ingress
   namespace: enternal-kingdom
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    alb.ingress.kubernetes.io/scheme: internet-facing          # ALB is accessible from the internet
+    alb.ingress.kubernetes.io/target-type: instance            # Target EC2 instances using NodePort
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'   # ALB listens on HTTP port 80
 spec:
+  ingressClassName: alb  # Specifies AWS ALB Ingress Controller
   rules:
-  - host: enteral-kingdom.mmetafi.gg
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: landing-page-service
-            port:
-              number: 80
+    - host: kingdoms.game  # Replace with your actual domain
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: landing-page-service
+                port:
+                  number: 80
