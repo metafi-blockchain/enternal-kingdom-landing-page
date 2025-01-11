@@ -1,7 +1,7 @@
-docker build -t roster90/enteral-kingdom-landing-page . 
+docker build -t metafi/enteral-kingdom-landing-page:0.1.1  . 
 
 
-docker buildx build --platform linux/amd64,linux/arm64 -t roster90/enteral-kingdom-landing-page:0.1.0 --push .
+docker buildx build --platform linux/amd64,linux/arm64 -t metafi/enteral-kingdom-landing-page:0.1.1 --push .
 
 
-docker push roster90/enteral-kingdom-landing-page:0.1.0
+docker push metafi/enteral-kingdom-landing-page:0.1.1
