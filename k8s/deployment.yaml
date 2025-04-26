@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: enteral-kingdom-landing-page
-  namespace: enternal-kingdom
+  namespace: enteral-kingdom  # ✅ Fix chính tả namespace
 spec:
   replicas: 1
   selector:
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: enteral-kingdom-container
-        image: roster90/enteral-kingdom-landing-page:0.1.1
+        image: metafi/enteral-kingdom-landing-page:0.1.1
         resources:
           limits:
             memory: "512Mi"
